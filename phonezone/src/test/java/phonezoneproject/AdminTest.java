@@ -37,8 +37,7 @@ public class AdminTest extends beforeandafterclassTest {
 	
 	@Test
 	public void admin_button_test() throws InterruptedException, IOException
-	{
-		 
+	{ 
 		wd.findElement(By.xpath(prop.getProperty("Admin_button"))).click();
 		System.out.println(wd.getTitle());
 		
@@ -47,5 +46,4 @@ public class AdminTest extends beforeandafterclassTest {
 		Thread.sleep(3000);
 	}
 	
-
 }
