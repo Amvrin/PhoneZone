@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class WholesalerTest extends beforeandafterclassTest {
+public class WholesalerTest extends BaseClass {
 	
 	private static  Properties prop =new Properties();
 	private static FileInputStream fis;
