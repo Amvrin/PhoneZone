@@ -42,6 +42,6 @@ public class WholesalerTest extends beforeandafterclassTest {
 		String text= wd.findElement(By.xpath(prop.getProperty("common_header_login"))).getText();
 		
 		Assert.assertEquals(text,"Staff/Wholeseller Login");
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 	}
 }
