@@ -10,7 +10,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class browserlistTest {
 	
-	static WebDriver wd;
+	protected static WebDriver wd;
 	
 		
 	public static void InvokeDriver(String enterdriver)
@@ -19,18 +19,21 @@ public class browserlistTest {
 		if(enterdriver.equals("chrome"))
 		{
 			wd=new ChromeDriver();
+			wd.manage().window().maximize();
 			wd.manage().deleteAllCookies();
 		}
 		else if(enterdriver.equals("ff") || enterdriver.equals("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/Driver/mozilladriver/geckodriver32.exe");
 			wd=new FirefoxDriver();
+			wd.manage().window().maximize();
 			wd.manage().deleteAllCookies();
 		}
 		else if(enterdriver.equals("ie") || enterdriver.equals("Internet Explorer"))
 		{
 			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"/Driver/IEdriver/IEDriverServer32.exe");
 			wd=new InternetExplorerDriver();
+			wd.manage().window().maximize();
 			wd.manage().deleteAllCookies();
 		}
 		

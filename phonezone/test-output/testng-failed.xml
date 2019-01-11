@@ -3,27 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="phonezoneproject.StaffTest">
+      <class name="test_phonezone.login_to_Admin_page">
         <methods>
-          <include name="opendriver"/>
-          <include name="staff_button_test"/>
-          <include name="quitedriver"/>
-        </methods>
-      </class> <!-- phonezoneproject.StaffTest -->
-      <class name="phonezoneproject.WholesalerTest">
-        <methods>
+          <include name="welcome_to_Admin_page"/>
           <include name="opendriver"/>
           <include name="quitedriver"/>
-          <include name="wholesaler_button_test"/>
         </methods>
-      </class> <!-- phonezoneproject.WholesalerTest -->
-      <class name="phonezoneproject.AdminTest">
-        <methods>
-          <include name="opendriver"/>
-          <include name="admin_button_test"/>
-          <include name="quitedriver"/>
-        </methods>
-      </class> <!-- phonezoneproject.AdminTest -->
+      </class> <!-- test_phonezone.login_to_Admin_page -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
