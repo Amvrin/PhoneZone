@@ -5,13 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import phonezoneproject_BaseClass.Adminlogin_credential;
 import phonezoneproject_BaseClass.BaseClass;
 
-public class Admin_Homepage extends Adminlogin_credential {
+public class Admin_Homepage extends BaseClass {
 	
 	private static  Properties locatorprop =new Properties();
 	private static FileInputStream fis;
@@ -36,9 +35,9 @@ public class Admin_Homepage extends Adminlogin_credential {
 	
 	
 	@Test
-	public void welcome_to_Admin_page()
+	public void special_order () throws InterruptedException
 	{
-	
+	Thread.sleep(10000);
 		System.out.println("welcome_to_Admin_page");
 		
 		

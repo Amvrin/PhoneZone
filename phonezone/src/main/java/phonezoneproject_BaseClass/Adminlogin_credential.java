@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.Test;
 
 public class Adminlogin_credential extends BaseClass{
 	
@@ -50,7 +51,8 @@ public class Adminlogin_credential extends BaseClass{
        
     }
 	
-	public void welcome_to_Admin_page()
+
+	public void login_Admin_page() throws InterruptedException
 	{
 		wd.findElement(By.xpath(locatorprop.getProperty("Admin_button"))).click();
 		System.out.println(wd.getTitle());
@@ -59,7 +61,7 @@ public class Adminlogin_credential extends BaseClass{
 		wd.findElement(By.xpath(locatorprop.getProperty("Admin_password"))).clear();
 		wd.findElement(By.xpath(locatorprop.getProperty("Admin_password"))).sendKeys(configprop.getProperty("password"));
 		wd.findElement(By.xpath(locatorprop.getProperty("Admin_login"))).click();
-		System.out.println("welcome_to_Admin_page");
+	
 	}
 
 }

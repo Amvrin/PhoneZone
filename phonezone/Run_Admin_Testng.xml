@@ -3,7 +3,9 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="phonezone_TestCase.Admin_Homepage"/>
+    
+<!-- <class name="phonezoneproject_BaseClass.Adminlogin_credential"/> -->
+        <class name="phonezone_TestCase.Admin_Homepage"/>
       
        
     </classes>

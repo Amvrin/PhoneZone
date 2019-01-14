@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8299" started-at="2019-01-14T17:56:49Z" finished-at="2019-01-14T17:56:57Z">
+  <suite name="Suite" duration-ms="23686" started-at="2019-01-14T18:56:06Z" finished-at="2019-01-14T18:56:30Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="8299" started-at="2019-01-14T17:56:49Z" finished-at="2019-01-14T17:56:57Z">
+    <test name="Test" duration-ms="23686" started-at="2019-01-14T18:56:06Z" finished-at="2019-01-14T18:56:30Z">
       <class name="phonezone_TestCase.Admin_Homepage">
-        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezone_TestCase.Admin_Homepage@a10858]" name="opendriver" is-config="true" duration-ms="7602" started-at="2019-01-14T17:56:49Z" finished-at="2019-01-14T17:56:56Z">
+        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezone_TestCase.Admin_Homepage@e24743]" name="opendriver" is-config="true" duration-ms="12981" started-at="2019-01-14T18:56:06Z" finished-at="2019-01-14T18:56:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opendriver -->
-        <test-method status="PASS" signature="welcome_to_Admin_page()[pri:0, instance:phonezone_TestCase.Admin_Homepage@a10858]" name="welcome_to_Admin_page" duration-ms="22" started-at="2019-01-14T17:56:56Z" finished-at="2019-01-14T17:56:56Z">
+        <test-method status="PASS" signature="special_order()[pri:0, instance:phonezone_TestCase.Admin_Homepage@e24743]" name="special_order" duration-ms="10014" started-at="2019-01-14T18:56:19Z" finished-at="2019-01-14T18:56:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- welcome_to_Admin_page -->
-        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezone_TestCase.Admin_Homepage@a10858]" name="quitedriver" is-config="true" duration-ms="637" started-at="2019-01-14T17:56:56Z" finished-at="2019-01-14T17:56:57Z">
+        </test-method> <!-- special_order -->
+        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezone_TestCase.Admin_Homepage@e24743]" name="quitedriver" is-config="true" duration-ms="671" started-at="2019-01-14T18:56:29Z" finished-at="2019-01-14T18:56:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitedriver -->
