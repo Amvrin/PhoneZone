@@ -1,4 +1,4 @@
-package phonezoneproject;
+package phonezone_TestCase;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,6 +9,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import phonezoneproject_BaseClass.BaseClass;
 
 public class AdminTest extends BaseClass {
 	
@@ -212,6 +214,7 @@ WebElement para = wd.findElement(By.xpath(prop.getProperty("para_text")));
 		
 	}
 	
+	@Test
 	public void click_on_Main_Menu_btn()
 	{
 		wd.findElement(By.xpath(prop.getProperty("Admin_button"))).click();

@@ -1,89 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="68916" started-at="2019-01-11T19:52:51Z" finished-at="2019-01-11T19:54:00Z">
+  <suite name="Suite" duration-ms="9047" started-at="2019-01-14T15:24:08Z" finished-at="2019-01-14T15:24:17Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="68916" started-at="2019-01-11T19:52:51Z" finished-at="2019-01-11T19:54:00Z">
-      <class name="phonezoneproject.StaffTest">
-        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezoneproject.StaffTest@e24743]" name="opendriver" is-config="true" duration-ms="6724" started-at="2019-01-11T19:53:32Z" finished-at="2019-01-11T19:53:39Z">
+    <test name="Test" duration-ms="9047" started-at="2019-01-14T15:24:08Z" finished-at="2019-01-14T15:24:17Z">
+      <class name="phonezone_TestCase.Admin_Homepage">
+        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezone_TestCase.Admin_Homepage@b0ed20]" name="opendriver" is-config="true" duration-ms="8075" started-at="2019-01-14T15:24:08Z" finished-at="2019-01-14T15:24:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opendriver -->
-        <test-method status="PASS" signature="staff_button_test()[pri:0, instance:phonezoneproject.StaffTest@e24743]" name="staff_button_test" duration-ms="6086" started-at="2019-01-11T19:53:39Z" finished-at="2019-01-11T19:53:45Z">
+        <test-method status="PASS" signature="welcome_to_Admin_page()[pri:0, instance:phonezone_TestCase.Admin_Homepage@b0ed20]" name="welcome_to_Admin_page" duration-ms="12" started-at="2019-01-14T15:24:16Z" finished-at="2019-01-14T15:24:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- staff_button_test -->
-        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezoneproject.StaffTest@e24743]" name="quitedriver" is-config="true" duration-ms="650" started-at="2019-01-11T19:53:45Z" finished-at="2019-01-11T19:53:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitedriver -->
-      </class> <!-- phonezoneproject.StaffTest -->
-      <class name="phonezoneproject.AdminTest">
-        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="opendriver" is-config="true" duration-ms="7751" started-at="2019-01-11T19:52:51Z" finished-at="2019-01-11T19:52:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- opendriver -->
-        <test-method status="PASS" signature="admin_button_test()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="admin_button_test" duration-ms="4034" started-at="2019-01-11T19:52:59Z" finished-at="2019-01-11T19:53:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- admin_button_test -->
-        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="quitedriver" is-config="true" duration-ms="660" started-at="2019-01-11T19:53:03Z" finished-at="2019-01-11T19:53:03Z">
+        </test-method> <!-- welcome_to_Admin_page -->
+        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezone_TestCase.Admin_Homepage@b0ed20]" name="quitedriver" is-config="true" duration-ms="934" started-at="2019-01-14T15:24:16Z" finished-at="2019-01-14T15:24:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitedriver -->
-        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="opendriver" is-config="true" duration-ms="7162" started-at="2019-01-11T19:53:03Z" finished-at="2019-01-11T19:53:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- opendriver -->
-        <test-method status="PASS" signature="admin_page_all_element_is_present()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="admin_page_all_element_is_present" duration-ms="1354" started-at="2019-01-11T19:53:10Z" finished-at="2019-01-11T19:53:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- admin_page_all_element_is_present -->
-        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="quitedriver" is-config="true" duration-ms="652" started-at="2019-01-11T19:53:12Z" finished-at="2019-01-11T19:53:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitedriver -->
-        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="opendriver" is-config="true" duration-ms="6830" started-at="2019-01-11T19:53:12Z" finished-at="2019-01-11T19:53:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- opendriver -->
-        <test-method status="PASS" signature="click_on_forgot_pass()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="click_on_forgot_pass" duration-ms="2272" started-at="2019-01-11T19:53:19Z" finished-at="2019-01-11T19:53:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- click_on_forgot_pass -->
-        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="quitedriver" is-config="true" duration-ms="662" started-at="2019-01-11T19:53:22Z" finished-at="2019-01-11T19:53:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitedriver -->
-        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="opendriver" is-config="true" duration-ms="6932" started-at="2019-01-11T19:53:22Z" finished-at="2019-01-11T19:53:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- opendriver -->
-        <test-method status="PASS" signature="return_to_admin_login_page()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="return_to_admin_login_page" duration-ms="2653" started-at="2019-01-11T19:53:29Z" finished-at="2019-01-11T19:53:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- return_to_admin_login_page -->
-        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezoneproject.AdminTest@b0ed20]" name="quitedriver" is-config="true" duration-ms="649" started-at="2019-01-11T19:53:32Z" finished-at="2019-01-11T19:53:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitedriver -->
-      </class> <!-- phonezoneproject.AdminTest -->
-      <class name="phonezoneproject.WholesalerTest">
-        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezoneproject.WholesalerTest@a10858]" name="opendriver" is-config="true" duration-ms="7069" started-at="2019-01-11T19:53:46Z" finished-at="2019-01-11T19:53:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- opendriver -->
-        <test-method status="PASS" signature="wholesaler_button_test()[pri:0, instance:phonezoneproject.WholesalerTest@a10858]" name="wholesaler_button_test" duration-ms="6038" started-at="2019-01-11T19:53:53Z" finished-at="2019-01-11T19:53:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wholesaler_button_test -->
-        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezoneproject.WholesalerTest@a10858]" name="quitedriver" is-config="true" duration-ms="694" started-at="2019-01-11T19:53:59Z" finished-at="2019-01-11T19:54:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitedriver -->
-      </class> <!-- phonezoneproject.WholesalerTest -->
+      </class> <!-- phonezone_TestCase.Admin_Homepage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

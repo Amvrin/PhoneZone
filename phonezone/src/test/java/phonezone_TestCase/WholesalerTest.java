@@ -1,4 +1,4 @@
-package phonezoneproject;
+package phonezone_TestCase;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,6 +8,8 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import phonezoneproject_BaseClass.BaseClass;
 
 public class WholesalerTest extends BaseClass {
 	

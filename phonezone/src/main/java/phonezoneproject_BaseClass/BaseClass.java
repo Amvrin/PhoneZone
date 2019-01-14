@@ -1,4 +1,4 @@
-package phonezoneproject;
+package phonezoneproject_BaseClass;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -26,6 +26,17 @@ public class BaseClass extends browserlistTest {
 	InvokeDriver(properties.getProperty("browser"));
 		wd.get(properties.getProperty("baseURL"));
 		
+		
+		/*
+		 * wd.findElement(By.xpath(locatorprop.getProperty("Admin_button"))).click();
+		System.out.println(wd.getTitle());
+		wd.findElement(By.xpath(locatorprop.getProperty("Admin_username"))).clear();
+		wd.findElement(By.xpath(locatorprop.getProperty("Admin_username"))).sendKeys(configprop.getProperty("username"));
+		wd.findElement(By.xpath(locatorprop.getProperty("Admin_password"))).clear();
+		wd.findElement(By.xpath(locatorprop.getProperty("Admin_password"))).sendKeys(configprop.getProperty("password"));
+		wd.findElement(By.xpath(locatorprop.getProperty("Admin_login"))).click();
+		System.out.println("welcome_to_Admin_page");
+		 */
 		
 		
 		

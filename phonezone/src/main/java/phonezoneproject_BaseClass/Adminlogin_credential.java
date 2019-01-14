@@ -1,4 +1,4 @@
-package test_phonezone;
+package phonezoneproject_BaseClass;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -6,12 +6,9 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.Test;
 
-import phonezoneproject.BaseClass;
-//import phonezoneproject.browserlistTest;
-
-public class login_to_Admin_page extends BaseClass {
+public class Adminlogin_credential extends BaseClass{
+	
 	
 	private static  Properties locatorprop =new Properties();
 	private static FileInputStream fis;
@@ -52,7 +49,7 @@ public class login_to_Admin_page extends BaseClass {
 		}
        
     }
-	@Test
+	
 	public void welcome_to_Admin_page()
 	{
 		wd.findElement(By.xpath(locatorprop.getProperty("Admin_button"))).click();

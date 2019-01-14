@@ -1,4 +1,4 @@
-package phonezoneproject;
+package phonezoneproject_BaseClass;
 
 import java.util.Scanner;
 

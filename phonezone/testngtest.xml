@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="phonezoneproject.AdminTest"/>
-       <class name="phonezoneproject.StaffTest"/>
-       <class name="phonezoneproject.WholesalerTest"/>
+      <class name="phonezone_TestCase.AdminTest"/>
+       <class name="phonezone_TestCase.StaffTest"/>
+       <class name="phonezone_TestCase.WholesalerTest"/>
        
     </classes>
   </test> <!-- Test -->
