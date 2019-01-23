@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="phonezoneproject.beforeandafterclassTest">
+      <class name="phonezoneproject.Pagination">
         <methods>
-          <include name="testurl"/>
-          <include name="opendriver"/>
           <include name="quitedriver"/>
+          <include name="wholeseller"/>
+          <include name="opendriver"/>
         </methods>
-      </class> <!-- phonezoneproject.beforeandafterclassTest -->
+      </class> <!-- phonezoneproject.Pagination -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,15 +1,11 @@
 package phonezoneproject;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 
 public class BaseClass extends browserlistTest {
@@ -25,12 +21,7 @@ public class BaseClass extends browserlistTest {
 		properties.load(fis);
 	InvokeDriver(properties.getProperty("browser"));
 		wd.get(properties.getProperty("baseURL"));
-		
-		
-		
-		
-		
-			
+	
 		
 	}
 	

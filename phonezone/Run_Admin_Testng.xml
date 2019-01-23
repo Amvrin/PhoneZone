@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="test_phonezone.login_to_Admin_page"/>
+      <class name="phonezoneproject.Viewcart"/>
       
        
     </classes>
