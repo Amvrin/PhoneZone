@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite - package B">
+    <test name="Staff Testcases">
+        <classes preserve-order="true">
+            <class name="phonezoneproject_BaseClass.StaffDashboardTest"/>
+        </classes>
+    </test>
+</suite>
