@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+    
+ <class name="phonezoneproject_BaseClass.Adminlogin_credential"/>
+        <class name="phonezone_TestCase.Admin_Special_Order"/>
+         <class name="phonezone_TestCase.Admin_PM_Add_New_Category"/>
+      <class name="phonezone_TestCase.Admin_PM_Add_New_Product"/> 
+      <class name="phonezone_TestCase.Admin_PM_View_Category"/> 
+      <class name="phonezone_TestCase.Admin_PM_View_product"/>
+       
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

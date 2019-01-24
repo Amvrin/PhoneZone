@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" ignored="10" total="40" passed="25">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="3075019" started-at="2019-01-24T09:21:21Z" finished-at="2019-01-24T10:12:36Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="3075019" started-at="2019-01-24T09:21:21Z" finished-at="2019-01-24T10:12:36Z">
+      <class name="phonezone_TestCase.Admin_PM_Add_New_Product">
+        <test-method status="PASS" signature="edit_Add_new_category()[pri:15, instance:phonezone_TestCase.Admin_PM_Add_New_Product@31f924f5]" name="edit_Add_new_category" duration-ms="5563" started-at="2019-01-24T09:44:19Z" finished-at="2019-01-24T09:44:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edit_Add_new_category -->
+        <test-method status="PASS" signature="verify_all_elements_is_exisit()[pri:16, instance:phonezone_TestCase.Admin_PM_Add_New_Product@31f924f5]" name="verify_all_elements_is_exisit" duration-ms="16223" started-at="2019-01-24T09:44:25Z" finished-at="2019-01-24T09:44:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_all_elements_is_exisit -->
+        <test-method status="PASS" signature="click_on_submit_button_by_set_empty_feilds()[pri:17, instance:phonezone_TestCase.Admin_PM_Add_New_Product@31f924f5]" name="click_on_submit_button_by_set_empty_feilds" duration-ms="13184" started-at="2019-01-24T09:44:41Z" finished-at="2019-01-24T09:44:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_on_submit_button_by_set_empty_feilds -->
+        <test-method status="PASS" signature="enter_the_invalid_data_in_textbox()[pri:18, instance:phonezone_TestCase.Admin_PM_Add_New_Product@31f924f5]" name="enter_the_invalid_data_in_textbox" duration-ms="9153" started-at="2019-01-24T09:44:54Z" finished-at="2019-01-24T09:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter_the_invalid_data_in_textbox -->
+        <test-method status="PASS" signature="verify_the_response_text_when_status_is_Active()[pri:19, instance:phonezone_TestCase.Admin_PM_Add_New_Product@31f924f5]" name="verify_the_response_text_when_status_is_Active" duration-ms="264808" started-at="2019-01-24T09:45:03Z" finished-at="2019-01-24T09:49:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_response_text_when_status_is_Active -->
+        <test-method status="PASS" signature="verify_the_response_text_when_status_is_Inactive()[pri:20, instance:phonezone_TestCase.Admin_PM_Add_New_Product@31f924f5]" name="verify_the_response_text_when_status_is_Inactive" duration-ms="92598" started-at="2019-01-24T09:49:28Z" finished-at="2019-01-24T09:51:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_response_text_when_status_is_Inactive -->
+      </class> <!-- phonezone_TestCase.Admin_PM_Add_New_Product -->
+      <class name="phonezoneproject_BaseClass.Adminlogin_credential">
+        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezoneproject_BaseClass.Adminlogin_credential@fcd6521]" name="opendriver" is-config="true" duration-ms="26805" started-at="2019-01-24T09:20:54Z" finished-at="2019-01-24T09:21:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opendriver -->
+        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezoneproject_BaseClass.Adminlogin_credential@fcd6521]" name="quitedriver" is-config="true" duration-ms="985" started-at="2019-01-24T10:12:36Z" finished-at="2019-01-24T10:12:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitedriver -->
+      </class> <!-- phonezoneproject_BaseClass.Adminlogin_credential -->
+      <class name="phonezone_TestCase.Admin_Special_Order">
+        <test-method status="PASS" signature="Verify_side_navigation_bar_special_order()[pri:1, instance:phonezone_TestCase.Admin_Special_Order@27d415d9]" name="Verify_side_navigation_bar_special_order" duration-ms="1899" started-at="2019-01-24T09:21:21Z" finished-at="2019-01-24T09:21:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_side_navigation_bar_special_order -->
+        <test-method status="PASS" signature="click_on_the_send_special_order()[pri:2, instance:phonezone_TestCase.Admin_Special_Order@27d415d9]" name="click_on_the_send_special_order" duration-ms="15777" started-at="2019-01-24T09:21:23Z" finished-at="2019-01-24T09:21:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_on_the_send_special_order -->
+        <test-method status="PASS" signature="verify_the_elements_is_exsist()[pri:3, instance:phonezone_TestCase.Admin_Special_Order@27d415d9]" name="verify_the_elements_is_exsist" duration-ms="3325" started-at="2019-01-24T09:21:38Z" finished-at="2019-01-24T09:21:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_elements_is_exsist -->
+        <test-method status="PASS" signature="click_on_the_send_btn()[pri:4, instance:phonezone_TestCase.Admin_Special_Order@27d415d9]" name="click_on_the_send_btn" duration-ms="823" started-at="2019-01-24T09:21:42Z" finished-at="2019-01-24T09:21:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_on_the_send_btn -->
+        <test-method status="PASS" signature="validate_the_send_button_set_feilds_empty()[pri:5, instance:phonezone_TestCase.Admin_Special_Order@27d415d9]" name="validate_the_send_button_set_feilds_empty" duration-ms="1519" started-at="2019-01-24T09:21:43Z" finished-at="2019-01-24T09:21:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_the_send_button_set_feilds_empty -->
+        <test-method status="PASS" signature="validate_the_send_button_not_select_dropdown()[pri:6, instance:phonezone_TestCase.Admin_Special_Order@27d415d9]" name="validate_the_send_button_not_select_dropdown" duration-ms="1938" started-at="2019-01-24T09:21:44Z" finished-at="2019-01-24T09:21:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_the_send_button_not_select_dropdown -->
+        <test-method status="PASS" signature="select_data_from_dropdown_of_select_store()[pri:7, instance:phonezone_TestCase.Admin_Special_Order@27d415d9]" name="select_data_from_dropdown_of_select_store" duration-ms="90531" started-at="2019-01-24T09:21:46Z" finished-at="2019-01-24T09:23:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_data_from_dropdown_of_select_store -->
+        <test-method status="PASS" signature="validate_the_send_btn()[pri:8, instance:phonezone_TestCase.Admin_Special_Order@27d415d9]" name="validate_the_send_btn" duration-ms="35416" started-at="2019-01-24T09:23:17Z" finished-at="2019-01-24T09:23:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_the_send_btn -->
+      </class> <!-- phonezone_TestCase.Admin_Special_Order -->
+      <class name="phonezone_TestCase.Admin_PM_View_Category">
+        <test-method status="PASS" signature="edit_view_category()[pri:22, instance:phonezone_TestCase.Admin_PM_View_Category@5579bb86]" name="edit_view_category" duration-ms="43913" started-at="2019-01-24T09:51:01Z" finished-at="2019-01-24T09:51:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edit_view_category -->
+        <test-method status="PASS" signature="verify_the_search_functionality()[pri:23, instance:phonezone_TestCase.Admin_PM_View_Category@5579bb86]" name="verify_the_search_functionality" duration-ms="65653" started-at="2019-01-24T09:51:45Z" finished-at="2019-01-24T09:52:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_search_functionality -->
+        <test-method status="PASS" signature="verify_the_pagination_of_searching_records()[pri:24, instance:phonezone_TestCase.Admin_PM_View_Category@5579bb86]" name="verify_the_pagination_of_searching_records" duration-ms="40025" started-at="2019-01-24T09:52:50Z" finished-at="2019-01-24T09:53:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_pagination_of_searching_records -->
+        <test-method status="PASS" signature="verify_the_filterby_and_pagination_dropdown()[pri:25, instance:phonezone_TestCase.Admin_PM_View_Category@5579bb86]" name="verify_the_filterby_and_pagination_dropdown" duration-ms="131247" started-at="2019-01-24T09:53:30Z" finished-at="2019-01-24T09:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_filterby_and_pagination_dropdown -->
+        <test-method status="PASS" signature="verify_the_update_edit_btn_in_view_category()[pri:26, instance:phonezone_TestCase.Admin_PM_View_Category@5579bb86]" name="verify_the_update_edit_btn_in_view_category" duration-ms="9184" started-at="2019-01-24T09:55:41Z" finished-at="2019-01-24T09:55:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_update_edit_btn_in_view_category -->
+        <test-method status="FAIL" signature="verify_the_delete_functionality()[pri:27, instance:phonezone_TestCase.Admin_PM_View_Category@5579bb86]" name="verify_the_delete_functionality" duration-ms="36148" started-at="2019-01-24T09:55:51Z" finished-at="2019-01-24T09:56:27Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":".//table/tbody/tr"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UHN4BR8', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\deepak\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 979e38bcb60f24aac5cabe839dce5471
+*** Element info: {Using=xpath, value=.//table/tbody/tr}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//table/tbody/tr"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UHN4BR8', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\deepak\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 979e38bcb60f24aac5cabe839dce5471
+*** Element info: {Using=xpath, value=.//table/tbody/tr}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at phonezone_TestCase.Admin_PM_View_Category.verify_the_delete_functionality(Admin_PM_View_Category.java:435)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_delete_functionality -->
+      </class> <!-- phonezone_TestCase.Admin_PM_View_Category -->
+      <class name="phonezone_TestCase.Admin_PM_Add_New_Category">
+        <test-method status="PASS" signature="go_to_side_nav_bar()[pri:9, instance:phonezone_TestCase.Admin_PM_Add_New_Category@5c18298f]" name="go_to_side_nav_bar" duration-ms="1573" started-at="2019-01-24T09:23:52Z" finished-at="2019-01-24T09:23:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- go_to_side_nav_bar -->
+        <test-method status="PASS" signature="edit_Add_new_category()[pri:10, instance:phonezone_TestCase.Admin_PM_Add_New_Category@5c18298f]" name="edit_Add_new_category" duration-ms="37528" started-at="2019-01-24T09:23:54Z" finished-at="2019-01-24T09:24:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edit_Add_new_category -->
+        <test-method status="PASS" signature="verify_all_elements_exsist_in_Add_New_category()[pri:11, instance:phonezone_TestCase.Admin_PM_Add_New_Category@5c18298f]" name="verify_all_elements_exsist_in_Add_New_category" duration-ms="7546" started-at="2019-01-24T09:24:31Z" finished-at="2019-01-24T09:24:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_all_elements_exsist_in_Add_New_category -->
+        <test-method status="PASS" signature="verify_the_submit_btn_set_empty_feilds()[pri:12, instance:phonezone_TestCase.Admin_PM_Add_New_Category@5c18298f]" name="verify_the_submit_btn_set_empty_feilds" duration-ms="3950" started-at="2019-01-24T09:24:39Z" finished-at="2019-01-24T09:24:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_submit_btn_set_empty_feilds -->
+        <test-method status="PASS" signature="verify_the_submit_btn_set_all_feilds()[pri:13, instance:phonezone_TestCase.Admin_PM_Add_New_Category@5c18298f]" name="verify_the_submit_btn_set_all_feilds" duration-ms="1176396" started-at="2019-01-24T09:24:43Z" finished-at="2019-01-24T09:44:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_submit_btn_set_all_feilds -->
+      </class> <!-- phonezone_TestCase.Admin_PM_Add_New_Category -->
+      <class name="phonezone_TestCase.Admin_PM_View_product">
+        <test-method status="PASS" signature="edit_view_product()[pri:28, instance:phonezone_TestCase.Admin_PM_View_product@5204062d]" name="edit_view_product" duration-ms="4579" started-at="2019-01-24T09:56:27Z" finished-at="2019-01-24T09:56:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edit_view_product -->
+        <test-method status="FAIL" signature="verify_the_filterBy_and_pagination_of_view_product()[pri:29, instance:phonezone_TestCase.Admin_PM_View_product@5204062d]" name="verify_the_filterBy_and_pagination_of_view_product" duration-ms="954680" started-at="2019-01-24T09:56:32Z" finished-at="2019-01-24T10:12:26Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":".//div[@id='default_load']//div[2]/ul/li/a[contains(text(),180)]"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UHN4BR8', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\deepak\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 979e38bcb60f24aac5cabe839dce5471
+*** Element info: {Using=xpath, value=.//div[@id='default_load']//div[2]/ul/li/a[contains(text(),180)]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//div[@id='default_load']//div[2]/ul/li/a[contains(text(),180)]"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UHN4BR8', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\deepak\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 979e38bcb60f24aac5cabe839dce5471
+*** Element info: {Using=xpath, value=.//div[@id='default_load']//div[2]/ul/li/a[contains(text(),180)]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at phonezone_TestCase.Admin_PM_View_product.verify_the_filterBy_and_pagination_of_view_product(Admin_PM_View_product.java:130)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_filterBy_and_pagination_of_view_product -->
+        <test-method status="FAIL" signature="verify_the_search_functionality_of_view_product1()[pri:30, instance:phonezone_TestCase.Admin_PM_View_product@5204062d]" name="verify_the_search_functionality_of_view_product1" duration-ms="6180" started-at="2019-01-24T10:12:26Z" finished-at="2019-01-24T10:12:33Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <button class="btn btn-default" name="search_button" value="..." type="submit">Search</button> is not clickable at point (514, 321). Other element would receive the click: <div id="Searching_Modal" class="modal fade loading" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" style="display: block;"></div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UHN4BR8', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\deepak\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 979e38bcb60f24aac5cabe839dce5471]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button class="btn btn-default" name="search_button" value="..." type="submit">Search</button> is not clickable at point (514, 321). Other element would receive the click: <div id="Searching_Modal" class="modal fade loading" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" style="display: block;"></div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UHN4BR8', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\deepak\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 979e38bcb60f24aac5cabe839dce5471
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at phonezone_TestCase.Admin_PM_View_product.verify_the_search_functionality_of_view_product1(Admin_PM_View_product.java:266)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_search_functionality_of_view_product1 -->
+        <test-method status="FAIL" signature="verify_the_Edit_update_btn()[pri:31, instance:phonezone_TestCase.Admin_PM_View_product@5204062d]" name="verify_the_Edit_update_btn" duration-ms="2764" started-at="2019-01-24T10:12:33Z" finished-at="2019-01-24T10:12:35Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <button class="btn btn-default" name="search_button" value="..." type="submit">Search</button> is not clickable at point (514, 321). Other element would receive the click: <div id="Searching_Modal" class="modal fade loading" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" style="display: block;"></div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UHN4BR8', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\deepak\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 979e38bcb60f24aac5cabe839dce5471]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button class="btn btn-default" name="search_button" value="..." type="submit">Search</button> is not clickable at point (514, 321). Other element would receive the click: <div id="Searching_Modal" class="modal fade loading" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" style="display: block;"></div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UHN4BR8', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\deepak\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 979e38bcb60f24aac5cabe839dce5471
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at phonezone_TestCase.Admin_PM_View_product.verify_the_Edit_update_btn(Admin_PM_View_product.java:424)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_Edit_update_btn -->
+        <test-method status="FAIL" signature="verify_the_delete_functionality()[pri:32, instance:phonezone_TestCase.Admin_PM_View_product@5204062d]" name="verify_the_delete_functionality" duration-ms="252" started-at="2019-01-24T10:12:35Z" finished-at="2019-01-24T10:12:36Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <li>...</li> is not clickable at point (154, 407). Other element would receive the click: <div id="Searching_Modal" class="modal fade loading" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" style="display: block;"></div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UHN4BR8', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\deepak\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 979e38bcb60f24aac5cabe839dce5471]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <li>...</li> is not clickable at point (154, 407). Other element would receive the click: <div id="Searching_Modal" class="modal fade loading" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" style="display: block;"></div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UHN4BR8', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\deepak\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 979e38bcb60f24aac5cabe839dce5471
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at phonezone_TestCase.Admin_PM_View_product.verify_the_delete_functionality(Admin_PM_View_product.java:499)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_delete_functionality -->
+      </class> <!-- phonezone_TestCase.Admin_PM_View_product -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

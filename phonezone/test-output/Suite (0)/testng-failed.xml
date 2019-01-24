@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (0)]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="phonezone_TestCase.StaffTest">
+        <methods>
+          <include name="opendriver"/>
+          <include name="staff_button_test"/>
+          <include name="quitedriver"/>
+        </methods>
+      </class> <!-- phonezone_TestCase.StaffTest -->
+      <class name="phonezone_TestCase.WholesalerTest">
+        <methods>
+          <include name="opendriver"/>
+          <include name="quitedriver"/>
+          <include name="wholesaler_button_test"/>
+        </methods>
+      </class> <!-- phonezone_TestCase.WholesalerTest -->
+      <class name="phonezone_TestCase.AdminTest">
+        <methods>
+          <include name="opendriver"/>
+          <include name="admin_page_all_element_is_present"/>
+          <include name="click_on_forgot_pass"/>
+          <include name="admin_button_test"/>
+          <include name="click_on_Main_Menu_btn"/>
+          <include name="quitedriver"/>
+          <include name="return_to_admin_login_page"/>
+        </methods>
+      </class> <!-- phonezone_TestCase.AdminTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->
