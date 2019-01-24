@@ -53,12 +53,13 @@ public class Adminlogin_credential extends BaseClass{
 	
 
 	public void login_Admin_page() throws InterruptedException
-	{
+	{wd.findElement(By.xpath(locatorprop.getProperty("Admin_button"))).click();
+	Thread.sleep(2000);
 		System.out.println(wd.getTitle());
 		wd.findElement(By.xpath(locatorprop.getProperty("Admin_username"))).clear();
-		wd.findElement(By.xpath(locatorprop.getProperty("Admin_username"))).sendKeys(configprop.getProperty("username"));
+		wd.findElement(By.xpath(locatorprop.getProperty("Admin_username"))).sendKeys(configprop.getProperty("Admin_username"));
 		wd.findElement(By.xpath(locatorprop.getProperty("Admin_password"))).clear();
-		wd.findElement(By.xpath(locatorprop.getProperty("Admin_password"))).sendKeys(configprop.getProperty("password"));
+		wd.findElement(By.xpath(locatorprop.getProperty("Admin_password"))).sendKeys(configprop.getProperty("Admin_password"));
 		wd.findElement(By.xpath(locatorprop.getProperty("Admin_login"))).click();
 	
 	}

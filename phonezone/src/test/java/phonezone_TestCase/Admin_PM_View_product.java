@@ -48,21 +48,20 @@ public class Admin_PM_View_product extends BaseClass {
 
 	}
 
-	// @Test(priority = 27)
+	 @Test(priority = 27)
 	public void go_to_side_nav_bar() throws Throwable {
 		wait = new WebDriverWait(wd, 30);
 		WebElement sidenav = wd.findElement(By.xpath(locatorprop.getProperty("side_nav")));
 		wait.until(ExpectedConditions.visibilityOf(sidenav));
 
 		List<WebElement> litag = sidenav.findElements(By.xpath("li/a"));
-
+		
 		for (int i = 0; i < litag.size(); i++) {
 			System.out.println(i + ". " + litag.get(i).getText());
 
 			if (litag.get(i).getText().equals("Product Management")) {
 
 				Assert.assertEquals(litag.get(i).getText(), "Product Management");
-
 				System.out.println("PASS = " + litag.get(i).getText());
 				litag.get(i).click();
 				takescreenshot();
@@ -85,7 +84,7 @@ public class Admin_PM_View_product extends BaseClass {
 
 	}
 
-	@Test(priority = 29)
+	//@Test(priority = 29)
 	public void verify_the_filterBy_and_pagination_of_view_product() throws Throwable {
 		Actions act = new Actions(wd);
 		wait = new WebDriverWait(wd, 30);
@@ -219,7 +218,7 @@ public class Admin_PM_View_product extends BaseClass {
 		}
 	}
 
-	@Test(priority = 30)
+	//@Test(priority = 30)
 	public void verify_the_search_functionality_of_view_product1() throws Throwable {
 
 		Actions act = new Actions(wd);
@@ -507,13 +506,13 @@ public class Admin_PM_View_product extends BaseClass {
 		takescreenshot();
 		Thread.sleep(1000);
 		wd.findElement(By.xpath(locatorprop.getProperty("PS_searchbtn"))).click();
-		try {
+		Thread.sleep(3000);
+		if (wd.findElement(By.xpath(locatorprop.getProperty("count_categorylist"))).isDisplayed()==true) {
 		List<WebElement> VC_deletebtn_list = wd.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
 		if(VC_deletebtn_list.size()>=0) {
 		wait.until(ExpectedConditions
 				.visibilityOf(wd.findElement(By.xpath(locatorprop.getProperty("count_categorylist")))));
-		
-		
+			
 		for (int i = 0; i < VC_deletebtn_list.size(); i++) {
 			wd.findElement(By.xpath(locatorprop.getProperty("PS_deletebtn"))).click();
 					wait.until(ExpectedConditions.alertIsPresent());
@@ -529,6 +528,6 @@ public class Admin_PM_View_product extends BaseClass {
 			} else System.out.println("Data Not Exsist in the Table");
 		}
 
-	}}catch(Exception e) {System.out.println("No data table found in the page");}}
+	}}else {System.out.println("No data table found in the page");}}
 
 }

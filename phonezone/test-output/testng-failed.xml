@@ -3,23 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="phonezone_TestCase.Admin_PM_View_product">
+      <class name="PZ_end_to_end_test.Savecart">
         <methods>
           <include name="opendriver"/>
-          <include name="verify_the_Edit_update_btn"/>
-          <include name="verify_the_delete_functionality"/>
-          <include name="quitedriver"/>
-          <include name="verify_the_filterBy_and_pagination_of_view_product"/>
-          <include name="verify_the_search_functionality_of_view_product1"/>
-        </methods>
-      </class> <!-- phonezone_TestCase.Admin_PM_View_product -->
-      <class name="phonezone_TestCase.Admin_PM_View_Category">
-        <methods>
-          <include name="opendriver"/>
-          <include name="verify_the_delete_functionality"/>
+          <include name="cart"/>
           <include name="quitedriver"/>
         </methods>
-      </class> <!-- phonezone_TestCase.Admin_PM_View_Category -->
+      </class> <!-- PZ_end_to_end_test.Savecart -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

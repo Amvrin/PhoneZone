@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import phonezoneproject_BaseClass.Adminlogin_credential;
 import phonezoneproject_BaseClass.BaseClass;
 
 public class Admin_PM_View_Category extends BaseClass {
@@ -43,7 +44,13 @@ public class Admin_PM_View_Category extends BaseClass {
 
 	}
 
-	 //@Test(priority = 21)
+	@Test(priority = 20)
+	public void login_to_Admin_page() throws InterruptedException {
+		Adminlogin_credential alc = new Adminlogin_credential();
+		alc.login_Admin_page();
+	}
+	
+	 @Test(priority = 21)
 	public void go_to_side_nav_bar() throws Throwable {
 		wait = new WebDriverWait(wd, 30);
 		WebElement sidenav = wd.findElement(By.xpath(locatorprop.getProperty("side_nav")));
@@ -56,7 +63,6 @@ public class Admin_PM_View_Category extends BaseClass {
 
 			if (litag.get(i).getText().equals("Product Management")) {
 				Assert.assertEquals(litag.get(i).getText(), "Product Management");
-				takescreenshot();
 				System.out.println("PASS = " + litag.get(i).getText());
 				litag.get(i).click();
 				takescreenshot();
@@ -385,7 +391,7 @@ public class Admin_PM_View_Category extends BaseClass {
 			System.out.println("no options is exist in the dropdown");
 		}
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys("A Series 123");
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys("ASUS phone");
 
 		Select select3 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))));
 		if (actinact.equalsIgnoreCase("Active")) {
@@ -417,21 +423,45 @@ public class Admin_PM_View_Category extends BaseClass {
 		}
 
 	}
+	
+	@Test()
+	public void verify_the_add_new_category() throws InterruptedException {
+		Thread.sleep(2000);
+		wd.findElement(By.xpath(locatorprop.getProperty("add_new_category"))).click();
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys("Lenovo phone");
+		Thread.sleep(1000);
+		Select select1 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_grand_parent_id1"))));
+		select1.selectByIndex(1);
+		Thread.sleep(2000);
+		Select select2 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_categories_id1"))));
+		select2.selectByIndex(1);
+		Thread.sleep(2000);
+		Select select3 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))));
+		select3.selectByIndex(1);
+		Thread.sleep(1000);
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
+		Thread.sleep(2000);
+	}
 
 	@Test(priority = 27)
 	public void verify_the_delete_functionality() throws Throwable {
-
+	
+		wd.findElement(By.xpath(locatorprop.getProperty("view_category"))).click();
 		wait = new WebDriverWait(wd, 30);
 		wd.findElement(By.xpath(locatorprop.getProperty("view_category"))).click();
 		wait.until(ExpectedConditions
 				.visibilityOf(wd.findElement(By.xpath(locatorprop.getProperty("heading3")))));
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys("test");
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys("Retest1234");
 
 		wd.findElement(By.xpath(locatorprop.getProperty("searchbtn"))).click();
 		takescreenshot();
 		wd.findElement(By.xpath(locatorprop.getProperty("PS_searchbtn"))).click();
-		try {
+		
+		Thread.sleep(3000);
+
+		if (wd.findElement(By.xpath(".//table/tbody")).isDisplayed()==true) {
 		List<WebElement> VC_deletebtn_list = wd.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
 		if(VC_deletebtn_list.size()>=0) {
 		wait.until(ExpectedConditions
@@ -454,7 +484,7 @@ public class Admin_PM_View_Category extends BaseClass {
 		}
 
 	}
-	}catch(Exception e) {System.out.println("Not table record exsist");}
+	}else {System.out.println("Not table record exsist");}
 		}
 	
 

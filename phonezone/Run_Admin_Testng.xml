@@ -4,12 +4,14 @@
   <test name="Test">
     <classes>
     
- <class name="phonezoneproject_BaseClass.Adminlogin_credential"/>
-        <class name="phonezone_TestCase.Admin_Special_Order"/>
+ <!--<class name="phonezoneproject_BaseClass.Adminlogin_credential"/>
+          <class name="phonezone_TestCase.Admin_Special_Order"/>
          <class name="phonezone_TestCase.Admin_PM_Add_New_Category"/>
       <class name="phonezone_TestCase.Admin_PM_Add_New_Product"/> 
       <class name="phonezone_TestCase.Admin_PM_View_Category"/> 
-      <class name="phonezone_TestCase.Admin_PM_View_product"/>
+       <class name="phonezone_TestCase.Admin_PM_View_product"/>-->
+       
+        <class name="PZ_end_to_end_test.Admin_PM_View_Category"/> 
        
     </classes>
   </test> <!-- Test -->

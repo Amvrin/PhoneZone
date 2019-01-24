@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="phonezoneproject.beforeandafterclassTest">
+      <class name="PZ_end_to_end_test.StaffDashboardTest">
         <methods>
-          <include name="testurl"/>
           <include name="opendriver"/>
+          <include name="DownloadStockTake"/>
           <include name="quitedriver"/>
         </methods>
-      </class> <!-- phonezoneproject.beforeandafterclassTest -->
+      </class> <!-- PZ_end_to_end_test.StaffDashboardTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

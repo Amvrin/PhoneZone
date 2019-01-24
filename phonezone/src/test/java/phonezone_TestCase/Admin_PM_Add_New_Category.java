@@ -102,6 +102,7 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 
 	@Test(priority = 12)
 	public void verify_the_submit_btn_set_empty_feilds() throws Throwable {
+		
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
 		takescreenshot();
 		Boolean alerttext = wait.until(ExpectedConditions.textToBePresentInElement(
@@ -158,7 +159,7 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 						System.out.println("Alert is not coming or available");
 					}
 					wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
-					Thread.sleep(5000);
+					Thread.sleep(2000);
 					Boolean responsetext = wait.until(ExpectedConditions.textToBePresentInElement(
 							wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))),
 							wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText()));
