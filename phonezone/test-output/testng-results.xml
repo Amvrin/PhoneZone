@@ -1,147 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="4" total="17" passed="12">
+<testng-results skipped="0" failed="0" ignored="4" total="27" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="170097" started-at="2019-01-24T23:02:28Z" finished-at="2019-01-24T23:05:18Z">
+  <suite name="Admin and Staff" duration-ms="0" started-at="2019-01-25T20:21:14Z" finished-at="2019-01-25T20:21:14Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="170097" started-at="2019-01-24T23:02:28Z" finished-at="2019-01-24T23:05:18Z">
+  </suite> <!-- Admin and Staff -->
+  <suite name="Admin Suite" duration-ms="195414" started-at="2019-01-25T20:17:58Z" finished-at="2019-01-25T20:21:13Z">
+    <groups>
+    </groups>
+    <test name="View_Category Test" duration-ms="195414" started-at="2019-01-25T20:17:58Z" finished-at="2019-01-25T20:21:13Z">
+      <class name="PZ_end_to_end_test.Admin_PM_View_Category">
+        <test-method status="PASS" signature="opendriver()[pri:0, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="opendriver" is-config="true" duration-ms="6796" started-at="2019-01-25T20:17:51Z" finished-at="2019-01-25T20:17:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opendriver -->
+        <test-method status="PASS" signature="login_to_Admin_page()[pri:1, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="login_to_Admin_page" duration-ms="7559" started-at="2019-01-25T20:17:58Z" finished-at="2019-01-25T20:18:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_to_Admin_page -->
+        <test-method status="PASS" signature="go_to_side_nav_bar()[pri:2, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="go_to_side_nav_bar" duration-ms="310" started-at="2019-01-25T20:18:05Z" finished-at="2019-01-25T20:18:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- go_to_side_nav_bar -->
+        <test-method status="PASS" signature="verify_the_add_new_category()[pri:3, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_add_new_category" duration-ms="12618" started-at="2019-01-25T20:18:06Z" finished-at="2019-01-25T20:18:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_add_new_category -->
+        <test-method status="PASS" signature="verify_the_existing_category()[pri:4, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_existing_category" duration-ms="12075" started-at="2019-01-25T20:18:18Z" finished-at="2019-01-25T20:18:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_existing_category -->
+        <test-method status="PASS" signature="edit_view_category()[pri:5, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="edit_view_category" duration-ms="2675" started-at="2019-01-25T20:18:30Z" finished-at="2019-01-25T20:18:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edit_view_category -->
+        <test-method status="PASS" signature="verify_the_search_functionality()[pri:6, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_search_functionality" duration-ms="2005" started-at="2019-01-25T20:18:33Z" finished-at="2019-01-25T20:18:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_search_functionality -->
+        <test-method status="PASS" signature="verify_the_pagination_of_searching_records()[pri:7, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_pagination_of_searching_records" duration-ms="23367" started-at="2019-01-25T20:18:35Z" finished-at="2019-01-25T20:18:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_pagination_of_searching_records -->
+        <test-method status="PASS" signature="verify_the_filterby_and_pagination_dropdown()[pri:8, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_filterby_and_pagination_dropdown" duration-ms="81717" started-at="2019-01-25T20:18:59Z" finished-at="2019-01-25T20:20:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_filterby_and_pagination_dropdown -->
+        <test-method status="PASS" signature="verify_the_update_edit_btn_in_view_category()[pri:9, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_update_edit_btn_in_view_category" duration-ms="11372" started-at="2019-01-25T20:20:20Z" finished-at="2019-01-25T20:20:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_update_edit_btn_in_view_category -->
+        <test-method status="PASS" signature="verify_the_delete_functionality()[pri:10, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_delete_functionality" duration-ms="41687" started-at="2019-01-25T20:20:32Z" finished-at="2019-01-25T20:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_delete_functionality -->
+        <test-method status="PASS" signature="quitedriver()[pri:0, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="quitedriver" is-config="true" duration-ms="629" started-at="2019-01-25T20:21:13Z" finished-at="2019-01-25T20:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitedriver -->
+      </class> <!-- PZ_end_to_end_test.Admin_PM_View_Category -->
+    </test> <!-- View_Category Test -->
+  </suite> <!-- Admin Suite -->
+  <suite name="Staff Suite" duration-ms="106272" started-at="2019-01-25T20:16:04Z" finished-at="2019-01-25T20:17:50Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="106272" started-at="2019-01-25T20:16:04Z" finished-at="2019-01-25T20:17:50Z">
       <class name="PZ_end_to_end_test.Viewcart">
-        <test-method status="PASS" signature="cartview()[pri:13, instance:PZ_end_to_end_test.Viewcart@11b0d2a]" name="cartview" duration-ms="14221" started-at="2019-01-24T23:05:04Z" finished-at="2019-01-24T23:05:18Z">
+        <test-method status="PASS" signature="cartview()[pri:13, instance:PZ_end_to_end_test.Viewcart@9494d8]" name="cartview" duration-ms="16791" started-at="2019-01-25T20:17:34Z" finished-at="2019-01-25T20:17:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartview -->
       </class> <!-- PZ_end_to_end_test.Viewcart -->
       <class name="PZ_end_to_end_test.StaffDashboardTest">
-        <test-method status="PASS" signature="opendriver()[pri:0, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="opendriver" is-config="true" duration-ms="7606" started-at="2019-01-24T23:02:21Z" finished-at="2019-01-24T23:02:28Z">
+        <test-method status="PASS" signature="opendriver()[pri:0, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="opendriver" is-config="true" duration-ms="8425" started-at="2019-01-25T20:15:56Z" finished-at="2019-01-25T20:16:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opendriver -->
-        <test-method status="PASS" signature="login_to_Admin_page()[pri:1, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="login_to_Admin_page" duration-ms="7474" started-at="2019-01-24T23:02:28Z" finished-at="2019-01-24T23:02:36Z">
+        <test-method status="PASS" signature="login_to_Admin_page()[pri:1, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="login_to_Admin_page" duration-ms="7678" started-at="2019-01-25T20:16:04Z" finished-at="2019-01-25T20:16:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_to_Admin_page -->
-        <test-method status="PASS" signature="staffLogin_and_StoreSelector()[pri:2, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="staffLogin_and_StoreSelector" duration-ms="201" started-at="2019-01-24T23:02:36Z" finished-at="2019-01-24T23:02:36Z">
+        <test-method status="PASS" signature="staffLogin_and_StoreSelector()[pri:2, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="staffLogin_and_StoreSelector" duration-ms="185" started-at="2019-01-25T20:16:12Z" finished-at="2019-01-25T20:16:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- staffLogin_and_StoreSelector -->
-        <test-method status="PASS" signature="NavigateToDashboardViaTopMenu()[pri:3, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="NavigateToDashboardViaTopMenu" duration-ms="6208" started-at="2019-01-24T23:02:36Z" finished-at="2019-01-24T23:02:42Z">
+        <test-method status="PASS" signature="NavigateToDashboardViaTopMenu()[pri:3, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="NavigateToDashboardViaTopMenu" duration-ms="6237" started-at="2019-01-25T20:16:12Z" finished-at="2019-01-25T20:16:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToDashboardViaTopMenu -->
-        <test-method status="PASS" signature="StockTakeMenu()[pri:4, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="StockTakeMenu" duration-ms="5780" started-at="2019-01-24T23:02:42Z" finished-at="2019-01-24T23:02:48Z">
+        <test-method status="PASS" signature="StockTakeMenu()[pri:4, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="StockTakeMenu" duration-ms="3871" started-at="2019-01-25T20:16:18Z" finished-at="2019-01-25T20:16:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StockTakeMenu -->
-        <test-method status="PASS" signature="SortByBarcodeAscending()[pri:5, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="SortByBarcodeAscending" duration-ms="4822" started-at="2019-01-24T23:02:48Z" finished-at="2019-01-24T23:02:53Z">
+        <test-method status="PASS" signature="SortByBarcodeAscending()[pri:5, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByBarcodeAscending" duration-ms="2876" started-at="2019-01-25T20:16:22Z" finished-at="2019-01-25T20:16:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortByBarcodeAscending -->
-        <test-method status="PASS" signature="SortByBarcodeDescending()[pri:6, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="SortByBarcodeDescending" duration-ms="4862" started-at="2019-01-24T23:02:53Z" finished-at="2019-01-24T23:02:58Z">
+        <test-method status="PASS" signature="SortByBarcodeDescending()[pri:6, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByBarcodeDescending" duration-ms="2867" started-at="2019-01-25T20:16:25Z" finished-at="2019-01-25T20:16:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortByBarcodeDescending -->
-        <test-method status="PASS" signature="SortByTitleAscending()[pri:7, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="SortByTitleAscending" duration-ms="4850" started-at="2019-01-24T23:02:58Z" finished-at="2019-01-24T23:03:02Z">
+        <test-method status="PASS" signature="SortByTitleAscending()[pri:7, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByTitleAscending" duration-ms="2902" started-at="2019-01-25T20:16:28Z" finished-at="2019-01-25T20:16:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortByTitleAscending -->
-        <test-method status="PASS" signature="SortByTitleDescending()[pri:8, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="SortByTitleDescending" duration-ms="4876" started-at="2019-01-24T23:03:02Z" finished-at="2019-01-24T23:03:07Z">
+        <test-method status="PASS" signature="SortByTitleDescending()[pri:8, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByTitleDescending" duration-ms="2882" started-at="2019-01-25T20:16:31Z" finished-at="2019-01-25T20:16:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortByTitleDescending -->
-        <test-method status="PASS" signature="SearchProductByName()[pri:9, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="SearchProductByName" duration-ms="12104" started-at="2019-01-24T23:03:07Z" finished-at="2019-01-24T23:03:19Z">
+        <test-method status="PASS" signature="SearchProductByName()[pri:9, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SearchProductByName" duration-ms="10215" started-at="2019-01-25T20:16:34Z" finished-at="2019-01-25T20:16:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchProductByName -->
-        <test-method status="PASS" signature="DownloadStockTake()[pri:11, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="DownloadStockTake" duration-ms="37780" started-at="2019-01-24T23:03:19Z" finished-at="2019-01-24T23:03:57Z">
+        <test-method status="PASS" signature="DownloadStockTake()[pri:11, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="DownloadStockTake" duration-ms="19965" started-at="2019-01-25T20:16:44Z" finished-at="2019-01-25T20:17:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DownloadStockTake -->
-        <test-method status="PASS" signature="SendStock()[pri:10, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="SendStock" duration-ms="0" started-at="2019-01-24T23:03:19Z" finished-at="2019-01-24T23:03:19Z">
+        <test-method status="PASS" signature="SendStock()[pri:10, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SendStock" duration-ms="0" started-at="2019-01-25T20:16:44Z" finished-at="2019-01-25T20:16:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SendStock -->
-        <test-method status="PASS" signature="quitedriver()[pri:0, instance:PZ_end_to_end_test.StaffDashboardTest@1db50c5]" name="quitedriver" is-config="true" duration-ms="658" started-at="2019-01-24T23:05:18Z" finished-at="2019-01-24T23:05:19Z">
+        <test-method status="PASS" signature="quitedriver()[pri:0, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="quitedriver" is-config="true" duration-ms="670" started-at="2019-01-25T20:17:50Z" finished-at="2019-01-25T20:17:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitedriver -->
       </class> <!-- PZ_end_to_end_test.StaffDashboardTest -->
       <class name="PZ_end_to_end_test.Savecart">
-        <test-method status="FAIL" signature="cart()[pri:12, instance:PZ_end_to_end_test.Savecart@72e3f]" name="cart" duration-ms="66865" started-at="2019-01-24T23:03:57Z" finished-at="2019-01-24T23:05:04Z">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DEEPAK-PC', ip: '192.168.0.123', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\Amvrin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61744}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 0f7136c6d064e454ba294d5c7a471554]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not interactable
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DEEPAK-PC', ip: '192.168.0.123', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\Amvrin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61744}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 0f7136c6d064e454ba294d5c7a471554
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at PZ_end_to_end_test.Savecart.cart(Savecart.java:96)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+        <test-method status="PASS" signature="cart()[pri:12, instance:PZ_end_to_end_test.Savecart@154b04f]" name="cart" duration-ms="29760" started-at="2019-01-25T20:17:04Z" finished-at="2019-01-25T20:17:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cart -->
       </class> <!-- PZ_end_to_end_test.Savecart -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
-  <suite name="Admin and Staff" duration-ms="0" started-at="2019-01-24T23:05:19Z" finished-at="2019-01-24T23:05:19Z">
-    <groups>
-    </groups>
-  </suite> <!-- Admin and Staff -->
+  </suite> <!-- Staff Suite -->
 </testng-results>

@@ -1,5 +1,8 @@
 package PZ_end_to_end_test;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -18,7 +21,7 @@ public class Savecart extends BaseClass {
 	 * Viewcart(); vc.staffcart(); }
 	 */
 	@Test(priority = 12)
-	public void cart() throws InterruptedException {
+	public void cart() throws InterruptedException, AWTException {
 
 		System.out.println("Testing side 2");
 		Thread.sleep(2000);
@@ -39,10 +42,10 @@ public class Savecart extends BaseClass {
 		 * Assert.assertEquals(wd.findElement(By.xpath(".//div[@class='tables']//h3")).
 		 * getText(), "Recent Order Listing");
 		 */
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		wd.findElement(By.xpath(".//a[contains(text(),'Store Management')]")).click();
 		wd.findElement(By.xpath(".//a[contains(text(),'Place New Order')]")).click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 
 		/* Selecting the dropdowns */
 
@@ -90,15 +93,36 @@ public class Savecart extends BaseClass {
 		 */
 		wd.findElement(By.xpath(".//div[@class='form-group']//button[@value='Search']")).click();
 		Thread.sleep(3000);
-		for (int i = 1; i <= 3; i++) {
+		Robot r = new Robot();
+		r.keyPress(KeyEvent.VK_PAGE_DOWN);
+		r.keyRelease(KeyEvent.VK_PAGE_DOWN);
+		Thread.sleep(3000);
+		List<WebElement> rownum = wd.findElements(By.xpath(".//table/tbody/tr//button[2]"));
+		System.out.println("Number of the row is = " + rownum.size());
+		for (int j = 2; j <= 4; j++) {
+			if (rownum.get(j).isDisplayed() == true) {
 
-			Thread.sleep(10000);
-			wd.findElement(By.xpath(".//tr[" + i + "]//button[contains(text(),'+')]")).click();
-			System.out.println("Item-" + i);
+				for (int i = 1; i <= 3; i++) {
+
+					rownum.get(j).click();
+					System.out.println("Item-" + i);
+
+				}
+
+			} else
+				System.out.println("Row is not found");
 
 		}
+
+		r.keyPress(KeyEvent.VK_PAGE_UP);
+		r.keyRelease(KeyEvent.VK_PAGE_UP);
+
+		Thread.sleep(2000);
 		wd.findElement(By.xpath(".//button[@id='save_cart']")).click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
+		String alertmsg = wd.findElement(By.xpath(".//div[@id='ajax_response']/div")).getText();
+		Assert.assertEquals(alertmsg, "Products added to cart successfully.");
+
 	}
 
 }

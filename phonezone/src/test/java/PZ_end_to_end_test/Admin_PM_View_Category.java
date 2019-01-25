@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -44,9 +45,17 @@ public class Admin_PM_View_Category extends BaseClass {
 		}
 
 	}
-	
-	static String passtext="Lenovo 5";// passs text in the textbox
 
+	public static String passtext() {
+
+		Random random = new Random();
+		int num = random.nextInt(10000);
+		String passtext = "Lenovo headset" + num; // passs text in the textbox
+		return passtext;
+
+	}
+	static String passtext = passtext();
+	
 	@Test(priority = 1)
 	public void login_to_Admin_page() throws InterruptedException {
 		Adminlogin_credential alc = new Adminlogin_credential();
@@ -74,7 +83,7 @@ public class Admin_PM_View_Category extends BaseClass {
 
 		}
 	}
-	
+
 	@Test(priority = 3)
 	public void verify_the_add_new_category() throws InterruptedException {
 		Thread.sleep(2000);
@@ -93,10 +102,34 @@ public class Admin_PM_View_Category extends BaseClass {
 		Thread.sleep(1000);
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
 		Thread.sleep(2000);
+
+		Assert.assertEquals(wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText(),
+				"Category added successfully.");
 	}
-	
 
 	@Test(priority = 4)
+	public void verify_the_existing_category() throws InterruptedException {
+		Thread.sleep(2000);
+		wd.findElement(By.xpath(locatorprop.getProperty("add_new_category"))).click();
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys("Test");
+		Thread.sleep(1000);
+		Select select1 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_grand_parent_id1"))));
+		select1.selectByIndex(1);
+		Thread.sleep(2000);
+		Select select2 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_categories_id1"))));
+		select2.selectByIndex(1);
+		Thread.sleep(2000);
+		Select select3 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))));
+		select3.selectByIndex(1);
+		Thread.sleep(1000);
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
+		Thread.sleep(2000);
+		Assert.assertEquals(wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText(),
+				"Same category name already exists in database");
+	}
+
+	@Test(priority = 5)
 	public void edit_view_category() throws Throwable {
 
 		wd.findElement(By.xpath(locatorprop.getProperty("view_category"))).click();
@@ -109,11 +142,11 @@ public class Admin_PM_View_Category extends BaseClass {
 
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 6)
 	public void verify_the_search_functionality() throws Throwable {
 
 		wait = new WebDriverWait(wd, 30);
-		//String entertext = "Accessories";
+		// String entertext = "Accessories";
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
 
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(passtext);
@@ -157,7 +190,7 @@ public class Admin_PM_View_Category extends BaseClass {
 
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void verify_the_pagination_of_searching_records() throws Throwable {
 		Actions act = new Actions(wd);
 		wait = new WebDriverWait(wd, 30);
@@ -272,7 +305,7 @@ public class Admin_PM_View_Category extends BaseClass {
 
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void verify_the_filterby_and_pagination_dropdown() throws Throwable {
 
 		Actions act = new Actions(wd);
@@ -282,7 +315,7 @@ public class Admin_PM_View_Category extends BaseClass {
 		for (int k = 1; k < filterby.size(); k++) {
 			select.selectByIndex(k);
 			System.out.println(filterby.get(k).getText());
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 
 			List<WebElement> pagielement = wd.findElements(By.xpath(locatorprop.getProperty("pagination")));
 			int paginum = pagielement.size();
@@ -394,17 +427,21 @@ public class Admin_PM_View_Category extends BaseClass {
 		}
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void verify_the_update_edit_btn_in_view_category() throws Throwable {
 
 		wait = new WebDriverWait(wd, 30);
+		Thread.sleep(2000);
 
 		String actinact = wd.findElement(By.xpath(locatorprop.getProperty("VC_status"))).getText();
 
 		wd.findElement(By.xpath(locatorprop.getProperty("VC_editpensil"))).click();
-		Thread.sleep(3000);
-		/*wait.until(ExpectedConditions.textToBePresentInElement(
-				wd.findElement(By.xpath(locatorprop.getProperty("heading3"))), "Update Category"));*/
+		Thread.sleep(2000);
+		/*
+		 * wait.until(ExpectedConditions.textToBePresentInElement(
+		 * wd.findElement(By.xpath(locatorprop.getProperty("heading3"))),
+		 * "Update Category"));
+		 */
 		String addNCtext = wd.findElement(By.xpath(locatorprop.getProperty("heading3"))).getText();
 		String VCbreadcrumb = wd.findElement(By.xpath(locatorprop.getProperty("ANP_ADbreadcrumb"))).getText();
 		Assert.assertEquals(VCbreadcrumb, addNCtext);
@@ -456,15 +493,14 @@ public class Admin_PM_View_Category extends BaseClass {
 
 	}
 
-
-
-	@Test(priority = 9)
+	@Test(priority = 10)
 	public void verify_the_delete_functionality() throws Throwable {
 		Actions act = new Actions(wd);
 		wait = new WebDriverWait(wd, 30);
 		wd.findElement(By.xpath(locatorprop.getProperty("view_category"))).click();
 		Thread.sleep(3000);
-		wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.xpath(locatorprop.getProperty("second_heading3")))));
+		wait.until(
+				ExpectedConditions.visibilityOf(wd.findElement(By.xpath(locatorprop.getProperty("second_heading3")))));
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(passtext);
 
@@ -630,7 +666,6 @@ public class Admin_PM_View_Category extends BaseClass {
 
 		// *********************
 
-		
 	}
 
 }

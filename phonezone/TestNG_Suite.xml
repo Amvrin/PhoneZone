@@ -3,6 +3,6 @@
 <suite name="Admin and Staff">
   <suite-files>
     <suite-file path="testng_staff.xml" />
-  <!-- <suite-file path="Run_Admin_Testng.xml" />-->
+  <suite-file path="Run_Admin_Testng.xml" />
   </suite-files>
 </suite> 

@@ -1,5 +1,8 @@
 package PZ_end_to_end_test;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.nio.file.Path;
@@ -82,7 +85,7 @@ public class StaffDashboardTest extends BaseClass
 		OB_StaffPage obj_OB_StaffPage = new OB_StaffPage(wd);
 		obj_OB_StaffPage.StockTakeMenu().click();
 		obj_OB_StaffPage.SendStockSubMenu().click();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		
 		
 	}
@@ -93,7 +96,7 @@ public class StaffDashboardTest extends BaseClass
 		OB_StaffPage obj_OB_StaffPage = new OB_StaffPage(wd);
 		Select selectOrderBy = new Select(wd.findElement(By.name("record_sort_by")));
 		selectOrderBy.selectByVisibleText("Barcode (Ascending)");
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 	}
 	
 	@Test(priority=6)
@@ -102,7 +105,7 @@ public class StaffDashboardTest extends BaseClass
 		OB_StaffPage obj_OB_StaffPage = new OB_StaffPage(wd);
 		Select selectOrderBy = new Select(wd.findElement(By.name("record_sort_by")));
 		selectOrderBy.selectByVisibleText("Barcode (Descending)");
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 	}
 	
 	@Test(priority=7)
@@ -111,7 +114,7 @@ public class StaffDashboardTest extends BaseClass
 		OB_StaffPage obj_OB_StaffPage = new OB_StaffPage(wd);
 		Select selectOrderBy = new Select(wd.findElement(By.name("record_sort_by")));
 		selectOrderBy.selectByVisibleText("Title (Ascending)");
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 	}
 	
 	@Test(priority=8)
@@ -120,7 +123,7 @@ public class StaffDashboardTest extends BaseClass
 		OB_StaffPage obj_OB_StaffPage = new OB_StaffPage(wd);
 		Select selectOrderBy = new Select(wd.findElement(By.name("record_sort_by")));
 		selectOrderBy.selectByVisibleText("Title (Descending)");
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 	}
 	
 	@Test(priority=9)
@@ -174,7 +177,7 @@ public class StaffDashboardTest extends BaseClass
 		
 		
 		
-		   Thread.sleep(4000);
+		   Thread.sleep(2000);
 	    wait.until(ExpectedConditions.refreshed(
 	        ExpectedConditions.elementToBeClickable(By.id("sub_sub_categories_id"))));
 	    selectSubSubCategoryIDForProduct = new Select(wd.findElement(By.id("sub_sub_categories_id")));
@@ -196,7 +199,7 @@ public class StaffDashboardTest extends BaseClass
 	}
 	
 	@Test(priority=11)
-	public void DownloadStockTake() throws InterruptedException
+	public void DownloadStockTake() throws InterruptedException, AWTException
 	{
 		long timeout = 3000;
 		final WebDriverWait wait = new WebDriverWait(wd, timeout);
@@ -216,7 +219,7 @@ public class StaffDashboardTest extends BaseClass
 		//WebElement div2;
 		WebElement plusButton;
 		
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		tableBody = table.findElement(By.tagName("tbody"));
 		tableRow = tableBody.findElement(By.tagName("tr"));
 		tableData = tableRow.findElement(By.tagName("td"));
@@ -227,10 +230,14 @@ public class StaffDashboardTest extends BaseClass
 		for(int i=0;i<5;i++)
 		{
 			plusButton.click();
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 		}
 		obj_OB_StaffPage.DownloadStockTakeButton().click();
 		Thread.sleep(3000);
+		Robot r=new Robot();
+		r.mouseMove(1350, 700);
+		r.mousePress(InputEvent.BUTTON1_MASK);
+		r.mouseRelease(InputEvent.BUTTON1_MASK);
 		
 	
 	}

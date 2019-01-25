@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Admin Suite]">
+  <test thread-count="5" name="View_Category Test(failed)">
     <classes>
       <class name="PZ_end_to_end_test.Admin_PM_View_Category">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- PZ_end_to_end_test.Admin_PM_View_Category -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- View_Category Test(failed) -->
+</suite> <!-- Failed suite [Admin Suite] -->
