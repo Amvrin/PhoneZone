@@ -29,23 +29,24 @@ public class BaseClass extends browserlistTest {
 		properties.load(fis);
 		InvokeDriver(properties.getProperty("browser"));
 		wd.get(properties.getProperty("baseURL"));
-		
-		wd.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 
-	/*	if (properties.getProperty("landing_page").equals("Staff")) {
-			wd.findElement(By.xpath(properties.getProperty("Staff_button"))).click();
-			
-			 * Stafflogin_credential slc = new Stafflogin_credential();
-			 * slc.Login_Staff_Page();
-			 
-		} else if (properties.getProperty("landing_page").equals("Admin")) {
-			wd.findElement(By.xpath(properties.getProperty("Admin_button"))).click();
-			Adminlogin_credential alc = new Adminlogin_credential();
-			alc.login_Admin_page();
-		} else if (properties.getProperty("landing_page").equals("Wholesaler")) {
-			wd.findElement(By.xpath(properties.getProperty("wholeseller_button"))).click();
-		} else
-			System.out.println("Not the valid Page Name");*/
+		wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+		/*
+		 * if (properties.getProperty("landing_page").equals("Staff")) {
+		 * wd.findElement(By.xpath(properties.getProperty("Staff_button"))).click();
+		 * 
+		 * Stafflogin_credential slc = new Stafflogin_credential();
+		 * slc.Login_Staff_Page();
+		 * 
+		 * } else if (properties.getProperty("landing_page").equals("Admin")) {
+		 * wd.findElement(By.xpath(properties.getProperty("Admin_button"))).click();
+		 * Adminlogin_credential alc = new Adminlogin_credential();
+		 * alc.login_Admin_page(); } else if
+		 * (properties.getProperty("landing_page").equals("Wholesaler")) {
+		 * wd.findElement(By.xpath(properties.getProperty("wholeseller_button"))).click(
+		 * ); } else System.out.println("Not the valid Page Name");
+		 */
 
 	}
 
@@ -56,32 +57,33 @@ public class BaseClass extends browserlistTest {
 
 	public void takescreenshot() throws Throwable {
 
-		/*String modulename=wd.getCurrentUrl();
-		String modname []= modulename.split("/");
-		
-		for(int i=0;i<modname.length;i++)
-		{	
-			System.out.println(i+". "+modname[i]);
-			
+		String modulename = wd.getCurrentUrl();
+		String modname[] = modulename.split("/");
+
+		for (int i = 0; i < modname.length; i++) {
+			System.out.println(i + ". " + modname[i]);
+
 			System.out.println("**********screenshot*********************");
 		}
-		
-		String displayname=wd.findElement(By.xpath(".//div//h3")).getText();
-	
+
+		String displayname = wd.findElement(By.xpath(".//div//h3")).getText();
+
 		File srcfile = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
-		Thread.sleep(1000);
-		if(modname.length>=4) {
-			FileUtils.copyFile(srcfile,
-					new File(System.getProperty("user.dir") + "/screenshot_folder/"+modname[3]+"_"+modname[4]+"_"+modname[5]+"_"+ timestamp() + ".png"));
-		}
-		else if(modname.length<=4) {
-			FileUtils.copyFile(srcfile,
-					new File(System.getProperty("user.dir") + "/screenshot_folder/"+modname[3]+"_"+modname[4]+"_"+ timestamp() + ".png"));
-			
-		}
-		else {System.out.println("Some thing went wrong in the Saving image file");}
-		
-*/		
+
+		FileUtils.copyFile(srcfile, new File(System.getProperty("user.dir") + "/screenshot_folder/" + modname[3] + "_"
+				+ displayname + "_" + timestamp() + ".png"));
+		/*
+		 * if(modname.length>=4) { FileUtils.copyFile(srcfile, new
+		 * File(System.getProperty("user.dir") +
+		 * "/screenshot_folder/"+modname[3]+"_"+modname[4]+"_"+modname[5]+"_"+
+		 * timestamp() + ".png")); } else if(modname.length<=4) {
+		 * FileUtils.copyFile(srcfile, new File(System.getProperty("user.dir") +
+		 * "/screenshot_folder/"+modname[3]+"_"+modname[4]+"_"+ timestamp() + ".png"));
+		 * 
+		 * } else
+		 * {System.out.println("Some thing went wrong in the Saving image file");}
+		 */
+
 	}
 
 	public static String timestamp() {

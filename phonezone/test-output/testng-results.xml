@@ -2,132 +2,132 @@
 <testng-results skipped="0" failed="0" ignored="4" total="27" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="Admin and Staff" duration-ms="0" started-at="2019-01-25T20:21:14Z" finished-at="2019-01-25T20:21:14Z">
+  <suite name="Admin and Staff" duration-ms="0" started-at="2019-01-25T20:53:59Z" finished-at="2019-01-25T20:53:59Z">
     <groups>
     </groups>
   </suite> <!-- Admin and Staff -->
-  <suite name="Admin Suite" duration-ms="195414" started-at="2019-01-25T20:17:58Z" finished-at="2019-01-25T20:21:13Z">
+  <suite name="Admin Suite" duration-ms="195229" started-at="2019-01-25T20:50:43Z" finished-at="2019-01-25T20:53:58Z">
     <groups>
     </groups>
-    <test name="View_Category Test" duration-ms="195414" started-at="2019-01-25T20:17:58Z" finished-at="2019-01-25T20:21:13Z">
+    <test name="View_Category Test" duration-ms="195229" started-at="2019-01-25T20:50:43Z" finished-at="2019-01-25T20:53:58Z">
       <class name="PZ_end_to_end_test.Admin_PM_View_Category">
-        <test-method status="PASS" signature="opendriver()[pri:0, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="opendriver" is-config="true" duration-ms="6796" started-at="2019-01-25T20:17:51Z" finished-at="2019-01-25T20:17:58Z">
+        <test-method status="PASS" signature="opendriver()[pri:0, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="opendriver" is-config="true" duration-ms="7023" started-at="2019-01-25T20:50:36Z" finished-at="2019-01-25T20:50:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opendriver -->
-        <test-method status="PASS" signature="login_to_Admin_page()[pri:1, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="login_to_Admin_page" duration-ms="7559" started-at="2019-01-25T20:17:58Z" finished-at="2019-01-25T20:18:05Z">
+        <test-method status="PASS" signature="login_to_Admin_page()[pri:1, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="login_to_Admin_page" duration-ms="8102" started-at="2019-01-25T20:50:43Z" finished-at="2019-01-25T20:50:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_to_Admin_page -->
-        <test-method status="PASS" signature="go_to_side_nav_bar()[pri:2, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="go_to_side_nav_bar" duration-ms="310" started-at="2019-01-25T20:18:05Z" finished-at="2019-01-25T20:18:06Z">
+        <test-method status="PASS" signature="go_to_side_nav_bar()[pri:2, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="go_to_side_nav_bar" duration-ms="304" started-at="2019-01-25T20:50:51Z" finished-at="2019-01-25T20:50:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- go_to_side_nav_bar -->
-        <test-method status="PASS" signature="verify_the_add_new_category()[pri:3, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_add_new_category" duration-ms="12618" started-at="2019-01-25T20:18:06Z" finished-at="2019-01-25T20:18:18Z">
+        <test-method status="PASS" signature="verify_the_add_new_category()[pri:3, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_add_new_category" duration-ms="12419" started-at="2019-01-25T20:50:51Z" finished-at="2019-01-25T20:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_the_add_new_category -->
-        <test-method status="PASS" signature="verify_the_existing_category()[pri:4, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_existing_category" duration-ms="12075" started-at="2019-01-25T20:18:18Z" finished-at="2019-01-25T20:18:30Z">
+        <test-method status="PASS" signature="verify_the_existing_category()[pri:4, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_existing_category" duration-ms="12086" started-at="2019-01-25T20:51:04Z" finished-at="2019-01-25T20:51:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_the_existing_category -->
-        <test-method status="PASS" signature="edit_view_category()[pri:5, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="edit_view_category" duration-ms="2675" started-at="2019-01-25T20:18:30Z" finished-at="2019-01-25T20:18:33Z">
+        <test-method status="PASS" signature="edit_view_category()[pri:5, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="edit_view_category" duration-ms="2749" started-at="2019-01-25T20:51:16Z" finished-at="2019-01-25T20:51:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- edit_view_category -->
-        <test-method status="PASS" signature="verify_the_search_functionality()[pri:6, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_search_functionality" duration-ms="2005" started-at="2019-01-25T20:18:33Z" finished-at="2019-01-25T20:18:35Z">
+        <test-method status="PASS" signature="verify_the_search_functionality()[pri:6, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_search_functionality" duration-ms="2036" started-at="2019-01-25T20:51:18Z" finished-at="2019-01-25T20:51:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_the_search_functionality -->
-        <test-method status="PASS" signature="verify_the_pagination_of_searching_records()[pri:7, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_pagination_of_searching_records" duration-ms="23367" started-at="2019-01-25T20:18:35Z" finished-at="2019-01-25T20:18:59Z">
+        <test-method status="PASS" signature="verify_the_pagination_of_searching_records()[pri:7, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_pagination_of_searching_records" duration-ms="23574" started-at="2019-01-25T20:51:20Z" finished-at="2019-01-25T20:51:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_the_pagination_of_searching_records -->
-        <test-method status="PASS" signature="verify_the_filterby_and_pagination_dropdown()[pri:8, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_filterby_and_pagination_dropdown" duration-ms="81717" started-at="2019-01-25T20:18:59Z" finished-at="2019-01-25T20:20:20Z">
+        <test-method status="PASS" signature="verify_the_filterby_and_pagination_dropdown()[pri:8, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_filterby_and_pagination_dropdown" duration-ms="81161" started-at="2019-01-25T20:51:44Z" finished-at="2019-01-25T20:53:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_the_filterby_and_pagination_dropdown -->
-        <test-method status="PASS" signature="verify_the_update_edit_btn_in_view_category()[pri:9, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_update_edit_btn_in_view_category" duration-ms="11372" started-at="2019-01-25T20:20:20Z" finished-at="2019-01-25T20:20:32Z">
+        <test-method status="PASS" signature="verify_the_update_edit_btn_in_view_category()[pri:9, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_update_edit_btn_in_view_category" duration-ms="11299" started-at="2019-01-25T20:53:05Z" finished-at="2019-01-25T20:53:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_the_update_edit_btn_in_view_category -->
-        <test-method status="PASS" signature="verify_the_delete_functionality()[pri:10, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_delete_functionality" duration-ms="41687" started-at="2019-01-25T20:20:32Z" finished-at="2019-01-25T20:21:13Z">
+        <test-method status="PASS" signature="verify_the_delete_functionality()[pri:10, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="verify_the_delete_functionality" duration-ms="41478" started-at="2019-01-25T20:53:17Z" finished-at="2019-01-25T20:53:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_the_delete_functionality -->
-        <test-method status="PASS" signature="quitedriver()[pri:0, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="quitedriver" is-config="true" duration-ms="629" started-at="2019-01-25T20:21:13Z" finished-at="2019-01-25T20:21:14Z">
+        <test-method status="PASS" signature="quitedriver()[pri:0, instance:PZ_end_to_end_test.Admin_PM_View_Category@1021e6c]" name="quitedriver" is-config="true" duration-ms="652" started-at="2019-01-25T20:53:58Z" finished-at="2019-01-25T20:53:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitedriver -->
       </class> <!-- PZ_end_to_end_test.Admin_PM_View_Category -->
     </test> <!-- View_Category Test -->
   </suite> <!-- Admin Suite -->
-  <suite name="Staff Suite" duration-ms="106272" started-at="2019-01-25T20:16:04Z" finished-at="2019-01-25T20:17:50Z">
+  <suite name="Staff Suite" duration-ms="104070" started-at="2019-01-25T20:48:51Z" finished-at="2019-01-25T20:50:35Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="106272" started-at="2019-01-25T20:16:04Z" finished-at="2019-01-25T20:17:50Z">
+    <test name="Test" duration-ms="104070" started-at="2019-01-25T20:48:51Z" finished-at="2019-01-25T20:50:35Z">
       <class name="PZ_end_to_end_test.Viewcart">
-        <test-method status="PASS" signature="cartview()[pri:13, instance:PZ_end_to_end_test.Viewcart@9494d8]" name="cartview" duration-ms="16791" started-at="2019-01-25T20:17:34Z" finished-at="2019-01-25T20:17:50Z">
+        <test-method status="PASS" signature="cartview()[pri:13, instance:PZ_end_to_end_test.Viewcart@9494d8]" name="cartview" duration-ms="14261" started-at="2019-01-25T20:50:21Z" finished-at="2019-01-25T20:50:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartview -->
       </class> <!-- PZ_end_to_end_test.Viewcart -->
       <class name="PZ_end_to_end_test.StaffDashboardTest">
-        <test-method status="PASS" signature="opendriver()[pri:0, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="opendriver" is-config="true" duration-ms="8425" started-at="2019-01-25T20:15:56Z" finished-at="2019-01-25T20:16:04Z">
+        <test-method status="PASS" signature="opendriver()[pri:0, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="opendriver" is-config="true" duration-ms="7662" started-at="2019-01-25T20:48:43Z" finished-at="2019-01-25T20:48:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opendriver -->
-        <test-method status="PASS" signature="login_to_Admin_page()[pri:1, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="login_to_Admin_page" duration-ms="7678" started-at="2019-01-25T20:16:04Z" finished-at="2019-01-25T20:16:12Z">
+        <test-method status="PASS" signature="login_to_Admin_page()[pri:1, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="login_to_Admin_page" duration-ms="7818" started-at="2019-01-25T20:48:51Z" finished-at="2019-01-25T20:48:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_to_Admin_page -->
-        <test-method status="PASS" signature="staffLogin_and_StoreSelector()[pri:2, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="staffLogin_and_StoreSelector" duration-ms="185" started-at="2019-01-25T20:16:12Z" finished-at="2019-01-25T20:16:12Z">
+        <test-method status="PASS" signature="staffLogin_and_StoreSelector()[pri:2, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="staffLogin_and_StoreSelector" duration-ms="189" started-at="2019-01-25T20:48:59Z" finished-at="2019-01-25T20:48:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- staffLogin_and_StoreSelector -->
-        <test-method status="PASS" signature="NavigateToDashboardViaTopMenu()[pri:3, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="NavigateToDashboardViaTopMenu" duration-ms="6237" started-at="2019-01-25T20:16:12Z" finished-at="2019-01-25T20:16:18Z">
+        <test-method status="PASS" signature="NavigateToDashboardViaTopMenu()[pri:3, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="NavigateToDashboardViaTopMenu" duration-ms="6343" started-at="2019-01-25T20:48:59Z" finished-at="2019-01-25T20:49:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToDashboardViaTopMenu -->
-        <test-method status="PASS" signature="StockTakeMenu()[pri:4, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="StockTakeMenu" duration-ms="3871" started-at="2019-01-25T20:16:18Z" finished-at="2019-01-25T20:16:22Z">
+        <test-method status="PASS" signature="StockTakeMenu()[pri:4, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="StockTakeMenu" duration-ms="4074" started-at="2019-01-25T20:49:05Z" finished-at="2019-01-25T20:49:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StockTakeMenu -->
-        <test-method status="PASS" signature="SortByBarcodeAscending()[pri:5, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByBarcodeAscending" duration-ms="2876" started-at="2019-01-25T20:16:22Z" finished-at="2019-01-25T20:16:25Z">
+        <test-method status="PASS" signature="SortByBarcodeAscending()[pri:5, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByBarcodeAscending" duration-ms="2868" started-at="2019-01-25T20:49:09Z" finished-at="2019-01-25T20:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortByBarcodeAscending -->
-        <test-method status="PASS" signature="SortByBarcodeDescending()[pri:6, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByBarcodeDescending" duration-ms="2867" started-at="2019-01-25T20:16:25Z" finished-at="2019-01-25T20:16:28Z">
+        <test-method status="PASS" signature="SortByBarcodeDescending()[pri:6, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByBarcodeDescending" duration-ms="2867" started-at="2019-01-25T20:49:12Z" finished-at="2019-01-25T20:49:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortByBarcodeDescending -->
-        <test-method status="PASS" signature="SortByTitleAscending()[pri:7, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByTitleAscending" duration-ms="2902" started-at="2019-01-25T20:16:28Z" finished-at="2019-01-25T20:16:31Z">
+        <test-method status="PASS" signature="SortByTitleAscending()[pri:7, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByTitleAscending" duration-ms="2872" started-at="2019-01-25T20:49:15Z" finished-at="2019-01-25T20:49:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortByTitleAscending -->
-        <test-method status="PASS" signature="SortByTitleDescending()[pri:8, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByTitleDescending" duration-ms="2882" started-at="2019-01-25T20:16:31Z" finished-at="2019-01-25T20:16:34Z">
+        <test-method status="PASS" signature="SortByTitleDescending()[pri:8, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SortByTitleDescending" duration-ms="3001" started-at="2019-01-25T20:49:18Z" finished-at="2019-01-25T20:49:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortByTitleDescending -->
-        <test-method status="PASS" signature="SearchProductByName()[pri:9, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SearchProductByName" duration-ms="10215" started-at="2019-01-25T20:16:34Z" finished-at="2019-01-25T20:16:44Z">
+        <test-method status="PASS" signature="SearchProductByName()[pri:9, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SearchProductByName" duration-ms="10150" started-at="2019-01-25T20:49:21Z" finished-at="2019-01-25T20:49:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchProductByName -->
-        <test-method status="PASS" signature="DownloadStockTake()[pri:11, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="DownloadStockTake" duration-ms="19965" started-at="2019-01-25T20:16:44Z" finished-at="2019-01-25T20:17:04Z">
+        <test-method status="PASS" signature="DownloadStockTake()[pri:11, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="DownloadStockTake" duration-ms="19888" started-at="2019-01-25T20:49:31Z" finished-at="2019-01-25T20:49:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DownloadStockTake -->
-        <test-method status="PASS" signature="SendStock()[pri:10, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SendStock" duration-ms="0" started-at="2019-01-25T20:16:44Z" finished-at="2019-01-25T20:16:44Z">
+        <test-method status="PASS" signature="SendStock()[pri:10, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="SendStock" duration-ms="0" started-at="2019-01-25T20:49:31Z" finished-at="2019-01-25T20:49:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SendStock -->
-        <test-method status="PASS" signature="quitedriver()[pri:0, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="quitedriver" is-config="true" duration-ms="670" started-at="2019-01-25T20:17:50Z" finished-at="2019-01-25T20:17:51Z">
+        <test-method status="PASS" signature="quitedriver()[pri:0, instance:PZ_end_to_end_test.StaffDashboardTest@11b0d2a]" name="quitedriver" is-config="true" duration-ms="692" started-at="2019-01-25T20:50:35Z" finished-at="2019-01-25T20:50:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitedriver -->
       </class> <!-- PZ_end_to_end_test.StaffDashboardTest -->
       <class name="PZ_end_to_end_test.Savecart">
-        <test-method status="PASS" signature="cart()[pri:12, instance:PZ_end_to_end_test.Savecart@154b04f]" name="cart" duration-ms="29760" started-at="2019-01-25T20:17:04Z" finished-at="2019-01-25T20:17:34Z">
+        <test-method status="PASS" signature="cart()[pri:12, instance:PZ_end_to_end_test.Savecart@154b04f]" name="cart" duration-ms="29671" started-at="2019-01-25T20:49:51Z" finished-at="2019-01-25T20:50:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cart -->

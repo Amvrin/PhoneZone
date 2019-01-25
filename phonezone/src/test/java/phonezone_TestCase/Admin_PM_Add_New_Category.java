@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -14,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import phonezoneproject_BaseClass.Adminlogin_credential;
 import phonezoneproject_BaseClass.BaseClass;
 
 public class Admin_PM_Add_New_Category extends BaseClass {
@@ -40,8 +42,14 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 		}
 
 	}
-
+	
 	@Test(priority = 9)
+	public void login_to_Admin_page() throws InterruptedException {
+		Adminlogin_credential alc = new Adminlogin_credential();
+		alc.login_Admin_page();
+	}
+
+	@Test(priority = 10)
 	public void go_to_side_nav_bar() throws Throwable {
 		wait = new WebDriverWait(wd, 30);
 		WebElement sidenav = wd.findElement(By.xpath(locatorprop.getProperty("side_nav")));
@@ -65,8 +73,8 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 		}
 	}
 
-	@Test(priority = 10)
-	public void edit_Add_new_category() throws Throwable {
+	@Test(priority = 11)
+	public void verify_Add_new_category_landing_page() throws Throwable {
 
 		wd.findElement(By.xpath(locatorprop.getProperty("add_new_category"))).click();
 		String addNCtext = wd.findElement(By.xpath(locatorprop.getProperty("heading3"))).getText();
@@ -75,7 +83,7 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 
 	}
 
-	@Test(priority = 11)
+	@Test(priority = 12)
 	public void verify_all_elements_exsist_in_Add_New_category() throws Throwable {
 
 		List<WebElement> labellist = wd.findElements(By.xpath(locatorprop.getProperty("ANC_label")));
@@ -84,8 +92,10 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 			if (labellist.get(i).isDisplayed() == true) {
 				System.out.println(i + ". PASS = " + labellist.get(i).getText());
 				takescreenshot();
-			} else { takescreenshot();
-				System.out.println(i + ". FAIL = " + labellist.get(i).getText());}
+			} else {
+				takescreenshot();
+				System.out.println(i + ". FAIL = " + labellist.get(i).getText());
+			}
 
 		}
 		List<WebElement> inputlist = wd.findElements(By.xpath(locatorprop.getProperty("ANC_input")));
@@ -93,16 +103,66 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 			if (inputlist.get(j).isDisplayed() == true) {
 				takescreenshot();
 				System.out.println(j + ". PASS = " + inputlist.get(j).getText());
-			} else { takescreenshot();
-				System.out.println(j + ". FAIL = " + inputlist.get(j).getText());}
+			} else {
+				takescreenshot();
+				System.out.println(j + ". FAIL = " + inputlist.get(j).getText());
+			}
 
 		}
 
 	}
+	
+	
+	@Test(priority = 13)
+	public void verify_the_add_new_category() throws Throwable {
+		Thread.sleep(2000);
+		wd.findElement(By.xpath(locatorprop.getProperty("add_new_category"))).click();
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(passtext);
+		Thread.sleep(1000);
+		Select select1 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_grand_parent_id1"))));
+		select1.selectByIndex(1);
+		Thread.sleep(2000);
+		Select select2 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_categories_id1"))));
+		select2.selectByIndex(1);
+		Thread.sleep(2000);
+		Select select3 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))));
+		select3.selectByIndex(1);
+		Thread.sleep(1000);
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
+		Thread.sleep(2000);
 
-	@Test(priority = 12)
+		Assert.assertEquals(wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText(),
+				"Category added successfully.");
+		takescreenshot();
+	}
+
+	@Test(priority = 14)
+	public void verify_the_existing_category() throws Throwable {
+		Thread.sleep(2000);
+		wd.findElement(By.xpath(locatorprop.getProperty("add_new_category"))).click();
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(passtext);
+		Thread.sleep(1000);
+		Select select1 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_grand_parent_id1"))));
+		select1.selectByIndex(1);
+		Thread.sleep(2000);
+		Select select2 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_categories_id1"))));
+		select2.selectByIndex(1);
+		Thread.sleep(2000);
+		Select select3 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))));
+		select3.selectByIndex(1);
+		Thread.sleep(1000);
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
+		Thread.sleep(2000);
+		Assert.assertEquals(wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText(),
+				"Same category name already exists in database");
+		takescreenshot();
+	}
+
+	@Test(priority = 15)
 	public void verify_the_submit_btn_set_empty_feilds() throws Throwable {
-		
+
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
 		takescreenshot();
 		Boolean alerttext = wait.until(ExpectedConditions.textToBePresentInElement(
@@ -112,27 +172,27 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 		if (alerttext == true) {
 			takescreenshot();
 			System.out.println("PASS = " + wd.findElement(By.xpath(locatorprop.getProperty("ANC_alertmsg"))).getText());
-		} else {takescreenshot();
-			System.out.println("FAIL = " + wd.findElement(By.xpath(locatorprop.getProperty("ANC_alertmsg"))).getText());}
-		
-		
+		} else {
+			takescreenshot();
+			System.out.println("FAIL = " + wd.findElement(By.xpath(locatorprop.getProperty("ANC_alertmsg"))).getText());
+		}
 
 	}
 
-	@Test(priority = 13)
+	//@Test(priority = 16)
 	public void verify_the_submit_btn_set_all_feilds() throws Throwable {
 
-		//wd.findElement(By.xpath(locatorprop.getProperty("ANC_grand_parent_id1"))).click();
+		// wd.findElement(By.xpath(locatorprop.getProperty("ANC_grand_parent_id1"))).click();
 		List<WebElement> ANC_grand_parent_id = wd
 				.findElements(By.xpath(locatorprop.getProperty("ANC_grand_parent_id")));
 		for (int j = 1; j < ANC_grand_parent_id.size(); j++) {
 
 			Select select1 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_grand_parent_id1"))));
-						select1.selectByIndex(j);
-						takescreenshot();
-						Thread.sleep(1000);
+			select1.selectByIndex(j);
+			takescreenshot();
+			Thread.sleep(1000);
 
-			//wd.findElement(By.xpath(locatorprop.getProperty("ANC_categories_id1"))).click();
+			// wd.findElement(By.xpath(locatorprop.getProperty("ANC_categories_id1"))).click();
 			List<WebElement> ANC_categories_id = wd
 					.findElements(By.xpath(locatorprop.getProperty("ANC_categories_id")));
 
@@ -144,18 +204,18 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 				wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
 				wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys("test1");
 				takescreenshot();
-				//wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))).click();
+				// wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))).click();
 				List<WebElement> ANC_status = wd.findElements(By.xpath(locatorprop.getProperty("ANC_status")));
 
 				for (int l = 1; l < ANC_status.size(); l++) {
-					
+
 					Select select3 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))));
 					select3.selectByIndex(l);
 					takescreenshot();
-					
+
 					try {
-					wd.switchTo().alert();
-					}catch(Exception e) {
+						wd.switchTo().alert();
+					} catch (Exception e) {
 						System.out.println("Alert is not coming or available");
 					}
 					wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
@@ -165,11 +225,13 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 							wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText()));
 					takescreenshot();
 					if (responsetext == true) {
-						
-						System.out.println("PASS = " + wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText());
+
+						System.out.println("PASS = "
+								+ wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText());
 						takescreenshot();
-					} else { 
-						System.out.println("FAIL = " + wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText());
+					} else {
+						System.out.println("FAIL = "
+								+ wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText());
 						takescreenshot();
 					}
 
@@ -178,5 +240,18 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 		}
 
 	}
+
+	public static String passtext() {
+
+		Random random = new Random();
+		int num = random.nextInt(10000);
+		String passtext = "ASUS headset" + num; // passs text in the textbox
+		return passtext;
+
+	}
+
+	static String passtext = passtext();
+
+	
 
 }

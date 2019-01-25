@@ -43,14 +43,17 @@ public class Admin_PM_View_Category extends BaseClass {
 		}
 
 	}
+	
+	
+	static String passtext = Admin_PM_Add_New_Category.passtext();
 
 	@Test(priority = 20)
 	public void login_to_Admin_page() throws InterruptedException {
 		Adminlogin_credential alc = new Adminlogin_credential();
 		alc.login_Admin_page();
 	}
-	
-	 @Test(priority = 21)
+
+	@Test(priority = 21)
 	public void go_to_side_nav_bar() throws Throwable {
 		wait = new WebDriverWait(wd, 30);
 		WebElement sidenav = wd.findElement(By.xpath(locatorprop.getProperty("side_nav")));
@@ -89,10 +92,10 @@ public class Admin_PM_View_Category extends BaseClass {
 	public void verify_the_search_functionality() throws Throwable {
 
 		wait = new WebDriverWait(wd, 30);
-		String entertext = "Key";
+		//String entertext = "iPad";
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
 
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(entertext);
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(passtext);
 
 		wd.findElement(By.xpath(locatorprop.getProperty("searchbtn"))).click();
 		wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.xpath(locatorprop.getProperty("table_heading")))));
@@ -120,10 +123,11 @@ public class Admin_PM_View_Category extends BaseClass {
 		if (rowcount > 0) {
 			for (int j = 0; j < rowcount; j++) {
 				System.out.println("PASS " + count_categorylist.get(j).getText());
-				
-			}takescreenshot();
+				Assert.assertEquals(count_categorylist.get(j).findElement(By.xpath("td[2]")).getText(), passtext);
+			}
+			takescreenshot();
 		} else if (rowcount == 0) {
-			System.out.println("PASS " + " Data not Available with repect to the searching keyword : " + entertext);
+			System.out.println("PASS " + " Data not Available with repect to the searching keyword : " + passtext);
 			takescreenshot();
 		} else {
 			System.out.println("FAIL ");
@@ -158,8 +162,9 @@ public class Admin_PM_View_Category extends BaseClass {
 			if (rowcount > 0) {
 				for (int l = 0; l < rowcount; l++) {
 					System.out.println("PASS " + count_categorylist.get(l).getText());
-					
-				}takescreenshot();
+
+				}
+				takescreenshot();
 			} else if (rowcount == 0) {
 				System.out.println("PASS " + " Data not Available with repect to the searching keyword : ");
 				takescreenshot();
@@ -183,8 +188,9 @@ public class Admin_PM_View_Category extends BaseClass {
 				if (rowcount1 > 0) {
 					for (int l = 0; l < rowcount1; l++) {
 						System.out.println("PASS " + count_categorylist1.get(l).getText());
-						
-					}takescreenshot();
+
+					}
+					takescreenshot();
 				} else if (rowcount1 == 0) {
 					System.out.println("PASS " + " Data not Available with repect to the searching keyword : ");
 					takescreenshot();
@@ -201,8 +207,9 @@ public class Admin_PM_View_Category extends BaseClass {
 			if (rowcount > 0) {
 				for (int l = 0; l < rowcount; l++) {
 					System.out.println("PASS " + count_categorylist.get(l).getText());
-					
-				}takescreenshot();
+
+				}
+				takescreenshot();
 			} else if (rowcount == 0) {
 				System.out.println("PASS " + " Data not Available with repect to the searching keyword : ");
 				takescreenshot();
@@ -226,7 +233,7 @@ public class Admin_PM_View_Category extends BaseClass {
 				if (rowcount1 > 0) {
 					for (int l = 0; l < rowcount1; l++) {
 						System.out.println("PASS " + count_categorylist1.get(l).getText());
-						
+
 					}
 					takescreenshot();
 				} else if (rowcount1 == 0) {
@@ -275,8 +282,9 @@ public class Admin_PM_View_Category extends BaseClass {
 				if (rowcount > 0) {
 					for (int l = 0; l < rowcount; l++) {
 						System.out.println("PASS " + count_categorylist.get(l).getText());
-						
-					}takescreenshot();
+
+					}
+					takescreenshot();
 				} else if (rowcount == 0) {
 					System.out.println("PASS " + " Data not Available with repect to the searching keyword : ");
 					takescreenshot();
@@ -300,8 +308,9 @@ public class Admin_PM_View_Category extends BaseClass {
 					if (rowcount1 > 0) {
 						for (int l = 0; l < rowcount1; l++) {
 							System.out.println("PASS " + count_categorylist1.get(l).getText());
-							
-						}takescreenshot();
+
+						}
+						takescreenshot();
 					} else if (rowcount1 == 0) {
 						System.out.println("PASS " + " Data not Available with repect to the searching keyword : ");
 						takescreenshot();
@@ -318,8 +327,9 @@ public class Admin_PM_View_Category extends BaseClass {
 				if (rowcount > 0) {
 					for (int l = 0; l < rowcount; l++) {
 						System.out.println("PASS " + count_categorylist.get(l).getText());
-						
-					}takescreenshot();
+
+					}
+					takescreenshot();
 				} else if (rowcount == 0) {
 					System.out.println("PASS " + " Data not Available with repect to the searching keyword : ");
 					takescreenshot();
@@ -343,7 +353,7 @@ public class Admin_PM_View_Category extends BaseClass {
 					if (rowcount1 > 0) {
 						for (int l = 0; l < rowcount1; l++) {
 							System.out.println("PASS " + count_categorylist1.get(l).getText());
-							
+
 						}
 						takescreenshot();
 					} else if (rowcount1 == 0) {
@@ -391,7 +401,7 @@ public class Admin_PM_View_Category extends BaseClass {
 			System.out.println("no options is exist in the dropdown");
 		}
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys("ASUS phone");
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(Admin_PM_Add_New_Category.passtext());
 
 		Select select3 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))));
 		if (actinact.equalsIgnoreCase("Active")) {
@@ -423,69 +433,181 @@ public class Admin_PM_View_Category extends BaseClass {
 		}
 
 	}
+
 	
-	@Test()
-	public void verify_the_add_new_category() throws InterruptedException {
-		Thread.sleep(2000);
-		wd.findElement(By.xpath(locatorprop.getProperty("add_new_category"))).click();
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys("Lenovo phone");
-		Thread.sleep(1000);
-		Select select1 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_grand_parent_id1"))));
-		select1.selectByIndex(1);
-		Thread.sleep(2000);
-		Select select2 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_categories_id1"))));
-		select2.selectByIndex(1);
-		Thread.sleep(2000);
-		Select select3 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))));
-		select3.selectByIndex(1);
-		Thread.sleep(1000);
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
-		Thread.sleep(2000);
-	}
 
 	@Test(priority = 27)
 	public void verify_the_delete_functionality() throws Throwable {
-	
-		wd.findElement(By.xpath(locatorprop.getProperty("view_category"))).click();
+		Actions act = new Actions(wd);
 		wait = new WebDriverWait(wd, 30);
 		wd.findElement(By.xpath(locatorprop.getProperty("view_category"))).click();
-		wait.until(ExpectedConditions
-				.visibilityOf(wd.findElement(By.xpath(locatorprop.getProperty("heading3")))));
+		Thread.sleep(3000);
+		wait.until(
+				ExpectedConditions.visibilityOf(wd.findElement(By.xpath(locatorprop.getProperty("second_heading3")))));
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys("Retest1234");
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(passtext);
 
 		wd.findElement(By.xpath(locatorprop.getProperty("searchbtn"))).click();
 		takescreenshot();
 		wd.findElement(By.xpath(locatorprop.getProperty("PS_searchbtn"))).click();
-		
+
 		Thread.sleep(3000);
 
-		if (wd.findElement(By.xpath(".//table/tbody")).isDisplayed()==true) {
-		List<WebElement> VC_deletebtn_list = wd.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
-		if(VC_deletebtn_list.size()>=0) {
-		wait.until(ExpectedConditions
-				.visibilityOf(wd.findElement(By.xpath(locatorprop.getProperty("count_categorylist")))));
-				
-		for (int i = 0; i < VC_deletebtn_list.size(); i++) {
-			wd.findElement(By.xpath(locatorprop.getProperty("VC_deletebtn"))).click();
+		// *************************
+		Thread.sleep(1000);
+		List<WebElement> pagielement = wd.findElements(By.xpath(locatorprop.getProperty("pagination")));
+		int paginum = pagielement.size();
+		if (paginum >= 5) {
+			wd.findElement(By.xpath(locatorprop.getProperty("click_lastpage"))).click();
+			String lastpagetext = wd.findElement(By.xpath(locatorprop.getProperty("text_lastpagenumber"))).getText()
+					.trim();
+			int lastpagenumber = Integer.parseInt(lastpagetext);
 
-			wait.until(ExpectedConditions.alertIsPresent());
-			wd.switchTo().alert().accept();
+			System.out.println(lastpagenumber);
+			Thread.sleep(1000);
+			wd.findElement(By.xpath(locatorprop.getProperty("click_firstpage"))).click();
+			Thread.sleep(1000);
+			List<WebElement> count_categorylist = wd
+					.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
+			int rowcount = count_categorylist.size();
 
-			List<WebElement> listorrow = wd.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
-			if (listorrow.size() == 0) {
+			if (rowcount > 0) {
+				for (int l = 0; l < rowcount; l++) {
+					System.out.println("PASS " + count_categorylist.get(l).getText());
+
+				}
 				takescreenshot();
-				System.out.println("PASS -- Data deleted successfully");
-			} else if(listorrow.size()>=1) {
+			} else if (rowcount == 0) {
+				System.out.println("PASS " + " Data not Available with repect to the searching keyword : ");
 				takescreenshot();
-				System.out.println("FAIL -- data not deleted successfully");
-			} else System.out.println("Data Not Exsist in the Table");
-		}
+			} else {
+				System.out.println("FAIL ");
+				takescreenshot();
+			}
+			for (int i = 2; i <= lastpagenumber; i++) {
+
+				Thread.sleep(1000);
+				act.moveToElement(wd.findElement(
+						By.xpath(".//div[@id='default_load']//div[2]/ul/li/a[contains(text()," + i + ")]")))
+						.click(wd.findElement(
+								By.xpath(".//div[@id='default_load']//div[2]/ul/li/a[contains(text()," + i + ")]")))
+						.build().perform();
+
+				List<WebElement> count_categorylist1 = wd
+						.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
+				int rowcount1 = count_categorylist1.size();
+
+				if (rowcount1 > 0) {
+					for (int l = 0; l < rowcount1; l++) {
+						System.out.println("PASS " + count_categorylist1.get(l).getText());
+
+						wd.findElement(By.xpath(locatorprop.getProperty("VC_deletebtn"))).click();
+
+						wait.until(ExpectedConditions.alertIsPresent());
+						wd.switchTo().alert().accept();
+
+						List<WebElement> listorrow = wd
+								.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
+						if (listorrow.size() == 0) {
+							takescreenshot();
+							System.out.println("PASS -- Data deleted successfully");
+						} else if (listorrow.size() >= 1) {
+							takescreenshot();
+							System.out.println("FAIL -- data not deleted successfully");
+						} else
+							System.out.println("Data Not Exsist in the Table");
+
+					}
+					takescreenshot();
+				} else if (rowcount1 == 0) {
+					System.out.println("PASS " + " Data not Available with repect to the searching keyword : ");
+					takescreenshot();
+				} else {
+					System.out.println("FAIL ");
+					takescreenshot();
+				}
+			}
+
+		} else if (paginum < 5 || paginum >= 1) {
+			List<WebElement> count_categorylist = wd
+					.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
+			int rowcount = count_categorylist.size();
+			if (rowcount > 0) {
+				for (int l = 0; l < rowcount; l++) {
+					System.out.println("PASS " + count_categorylist.get(l).getText());
+					wd.findElement(By.xpath(locatorprop.getProperty("VC_deletebtn"))).click();
+
+					wait.until(ExpectedConditions.alertIsPresent());
+					wd.switchTo().alert().accept();
+
+					List<WebElement> listorrow = wd
+							.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
+					if (listorrow.size() == 0) {
+						takescreenshot();
+						System.out.println("PASS -- Data deleted successfully");
+					} else if (listorrow.size() >= 1) {
+						takescreenshot();
+						System.out.println("FAIL -- data not deleted successfully");
+					} else
+						System.out.println("Data Not Exsist in the Table");
+
+				}
+				takescreenshot();
+			} else if (rowcount == 0) {
+				System.out.println("PASS " + " Data not Available with repect to the searching keyword : ");
+				takescreenshot();
+			} else {
+				System.out.println("FAIL ");
+				takescreenshot();
+			}
+			for (int i = 2; i <= paginum; i++) {
+
+				Thread.sleep(1000);
+				act.moveToElement(wd.findElement(
+						By.xpath(".//div[@id='default_load']//div[2]/ul/li/a[contains(text()," + i + ")]")))
+						.click(wd.findElement(
+								By.xpath(".//div[@id='default_load']//div[2]/ul/li/a[contains(text()," + i + ")]")))
+						.build().perform();
+
+				List<WebElement> count_categorylist1 = wd
+						.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
+				int rowcount1 = count_categorylist1.size();
+
+				if (rowcount1 > 0) {
+					for (int l = 0; l < rowcount1; l++) {
+						System.out.println("PASS " + count_categorylist1.get(l).getText());
+						wd.findElement(By.xpath(locatorprop.getProperty("VC_deletebtn"))).click();
+
+						wait.until(ExpectedConditions.alertIsPresent());
+						wd.switchTo().alert().accept();
+
+						List<WebElement> listorrow = wd
+								.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
+						if (listorrow.size() == 0) {
+							takescreenshot();
+							System.out.println("PASS -- Data deleted successfully");
+						} else if (listorrow.size() >= 1) {
+							takescreenshot();
+							System.out.println("FAIL -- data not deleted successfully");
+						} else
+							System.out.println("Data Not Exsist in the Table");
+
+					}
+					takescreenshot();
+				} else if (rowcount1 == 0) {
+					System.out.println("PASS " + " Data not Available with repect to the searching keyword : ");
+					takescreenshot();
+				} else {
+					System.out.println("FAIL ");
+					takescreenshot();
+				}
+
+			}
+
+		} else
+			System.out.println("*************No Record exist********************************************************");
+
+		// *********************
 
 	}
-	}else {System.out.println("Not table record exsist");}
-		}
-	
-
 }

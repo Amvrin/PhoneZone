@@ -46,22 +46,7 @@ public class Admin_PM_View_Category extends BaseClass {
 
 	}
 
-	public static String passtext() {
-
-		Random random = new Random();
-		int num = random.nextInt(10000);
-		String passtext = "Lenovo headset" + num; // passs text in the textbox
-		return passtext;
-
-	}
-	static String passtext = passtext();
 	
-	@Test(priority = 1)
-	public void login_to_Admin_page() throws InterruptedException {
-		Adminlogin_credential alc = new Adminlogin_credential();
-		alc.login_Admin_page();
-	}
-
 	@Test(priority = 2)
 	public void go_to_side_nav_bar() throws Throwable {
 		wait = new WebDriverWait(wd, 30);
@@ -667,5 +652,23 @@ public class Admin_PM_View_Category extends BaseClass {
 		// *********************
 
 	}
+	
+	
+	public static String passtext() {
+
+		Random random = new Random();
+		int num = random.nextInt(10000);
+		String passtext = "Lenovo headset" + num; // passs text in the textbox
+		return passtext;
+
+	}
+	static String passtext = passtext();
+	
+	@Test(priority = 1)
+	public void login_to_Admin_page() throws InterruptedException {
+		Adminlogin_credential alc = new Adminlogin_credential();
+		alc.login_Admin_page();
+	}
+
 
 }
