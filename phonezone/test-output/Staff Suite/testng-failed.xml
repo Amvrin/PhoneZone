@@ -3,13 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Staff Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="PZ_end_to_end_test.Savecart">
-        <methods>
-          <include name="opendriver"/>
-          <include name="cart"/>
-          <include name="quitedriver"/>
-        </methods>
-      </class> <!-- PZ_end_to_end_test.Savecart -->
       <class name="PZ_end_to_end_test.Viewcart">
         <methods>
           <include name="opendriver"/>
@@ -17,14 +10,6 @@
           <include name="quitedriver"/>
         </methods>
       </class> <!-- PZ_end_to_end_test.Viewcart -->
-      <class name="PZ_end_to_end_test.StaffDashboardTest">
-        <methods>
-          <include name="opendriver"/>
-          <include name="DownloadStockTake"/>
-          <include name="quitedriver"/>
-          <include name="SearchProductByName"/>
-        </methods>
-      </class> <!-- PZ_end_to_end_test.StaffDashboardTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Staff Suite] -->

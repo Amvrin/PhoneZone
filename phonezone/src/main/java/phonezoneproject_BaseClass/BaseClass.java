@@ -32,21 +32,25 @@ public class BaseClass extends browserlistTest {
 
 		wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		/*
-		 * if (properties.getProperty("landing_page").equals("Staff")) {
-		 * wd.findElement(By.xpath(properties.getProperty("Staff_button"))).click();
-		 * 
-		 * Stafflogin_credential slc = new Stafflogin_credential();
-		 * slc.Login_Staff_Page();
-		 * 
-		 * } else if (properties.getProperty("landing_page").equals("Admin")) {
-		 * wd.findElement(By.xpath(properties.getProperty("Admin_button"))).click();
-		 * Adminlogin_credential alc = new Adminlogin_credential();
-		 * alc.login_Admin_page(); } else if
-		 * (properties.getProperty("landing_page").equals("Wholesaler")) {
-		 * wd.findElement(By.xpath(properties.getProperty("wholeseller_button"))).click(
-		 * ); } else System.out.println("Not the valid Page Name");
-		 */
+		
+		  if (properties.getProperty("landing_page").equals("Staff")) {
+		  wd.findElement(By.xpath(properties.getProperty("Staff_button"))).click();
+		  
+		  Stafflogin_credential slc = new Stafflogin_credential();
+		  slc.login_Staff_page();
+		  
+		  } else if (properties.getProperty("landing_page").equals("Admin")) {
+		 
+		// wd.findElement(By.xpath(properties.getProperty("Admin_button"))).click();
+		 
+		 Adminlogin_credential alc = new Adminlogin_credential();
+		 alc.login_Admin_page();
+		} 
+		 else if (properties.getProperty("landing_page").equals("Wholesaler")) {
+		 wd.findElement(By.xpath(properties.getProperty("wholeseller_button"))).click(
+		 ); } 
+		 else System.out.println("Not the valid Page Name");
+		 
 
 	}
 
@@ -60,11 +64,11 @@ public class BaseClass extends browserlistTest {
 		String modulename = wd.getCurrentUrl();
 		String modname[] = modulename.split("/");
 
-		for (int i = 0; i < modname.length; i++) {
+		/*for (int i = 0; i < modname.length; i++) {
 			System.out.println(i + ". " + modname[i]);
 
 			System.out.println("**********screenshot*********************");
-		}
+		}*/
 
 		String displayname = wd.findElement(By.xpath(".//div//h3")).getText();
 

@@ -19,10 +19,9 @@ public class Viewcart extends BaseClass {
 		/*Handling the weblElements */
 
 		System.out.println("Testing side 2");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		//List<WebElement> Select_Store=wd.findElements(By.xpath(".//div[@class='modal-dialog']//ul//a[@id='Stores_12']"));
-		Thread.sleep(5000);
-		System.out.println("Testing side 3");
+	
 		/* Printing the total items on the WebElements*/
 
 		/*for(int i=0;i<Select_Store.size();i++)
@@ -35,8 +34,9 @@ public class Viewcart extends BaseClass {
 
 		/*System.out.println(wd.findElement(By.xpath(".//div[@class='forms']//h3")).getText());
 		Assert.assertEquals(wd.findElement(By.xpath(".//div[@class='forms']//h3")).getText(), "Recent Order Listing");*/
-		Thread.sleep(2000);
-		wd.findElement(By.xpath(".//a[contains(text(),'Store Management')]")).click();
+		
+		//wd.findElement(By.xpath(".//a[contains(text(),'Store Management')]")).click();
+		Thread.sleep(3000);
 		wd.findElement(By.xpath(".//a[contains(text(),'View Cart')]")).click();
 		System.out.println(wd.getTitle());
 		a=wd.getTitle();

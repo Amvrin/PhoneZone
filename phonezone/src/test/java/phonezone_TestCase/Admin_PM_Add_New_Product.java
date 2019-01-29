@@ -44,7 +44,7 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 
 	}
 
-	//@Test(priority = 14)
+	//@Test(priority = 17)
 	public void go_to_side_nav_bar() throws Throwable {
 		wait = new WebDriverWait(wd, 30);
 		WebElement sidenav = wd.findElement(By.xpath(locatorprop.getProperty("side_nav")));
@@ -68,7 +68,7 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 		}
 	}
 
-	@Test(priority = 15)
+	@Test(priority = 18)
 	public void edit_Add_new_category() throws Throwable {
 
 		wd.findElement(By.xpath(locatorprop.getProperty("add_new_product"))).click();
@@ -81,7 +81,7 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 
 	}
 
-	@Test(priority = 16)
+	@Test(priority = 19)
 	public void verify_all_elements_is_exisit() throws Throwable {
 		wait =new WebDriverWait(wd,30);
 		List<WebElement> ANP_labelname = wd.findElements(By.xpath(locatorprop.getProperty("ANP_labelname")));
@@ -112,7 +112,7 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 
 	}
 
-	@Test(priority = 17)
+	@Test(priority = 20)
 	public void click_on_submit_button_by_set_empty_feilds() throws Throwable {
 		wait =new WebDriverWait(wd,30);
 		
@@ -136,7 +136,7 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 
 	}
 
-	@Test(priority = 18)
+	@Test(priority = 21)
 	public void enter_the_invalid_data_in_textbox() throws Throwable {
 
 		wd.navigate().refresh();
@@ -169,8 +169,8 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 
 	}
 
-	@Test(priority = 19)
-	public void verify_the_response_text_when_status_is_Active() throws Throwable {
+	@Test(priority = 22)
+	public void verify_the_response_text_when_status_is_set() throws Throwable {
 		wait =new WebDriverWait(wd,30);
 		wd.navigate().refresh();
 		Thread.sleep(1000);
@@ -230,7 +230,7 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 
 					Select select3 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))));
 					select3.selectByIndex(1);
-                   Thread.sleep(2000);
+                   Thread.sleep(5000);
 					wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
 					
 					Boolean responsetext = wait.until(ExpectedConditions.textToBePresentInElement(
@@ -267,7 +267,7 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 
 	}
 
-	@Test(priority = 20)
+	//@Test(priority = 20)
 	public void verify_the_response_text_when_status_is_Inactive() throws Throwable {
 		wait =new WebDriverWait(wd,30);
 		wd.navigate().refresh();
@@ -335,7 +335,7 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 					}catch(Exception e) {
 						System.out.println("Alert is not coming or available");
 					}
-					Thread.sleep(1000);
+					Thread.sleep(2000);
 					Boolean responsetext = wait.until(ExpectedConditions.textToBePresentInElement(
 							wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))),
 							wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText()));
@@ -351,15 +351,7 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 						{System.out.println("FAIL = "
 								+ wd.findElement(By.xpath(locatorprop.getProperty("response_send_order"))).getText());takescreenshot();}
 
-					select1.selectByIndex(j);
 					
-					try {
-						Select select2 = new Select(
-								wd.findElement(By.xpath(locatorprop.getProperty("ANP_sub_categories_id1"))));
-						select2.selectByIndex(k - 1);
-					} catch (Exception e) {
-						System.out.println(" ANP_sub_categories_id1 = Drop_down is empty");
-					}
 					// }
 				}
 
@@ -368,3 +360,4 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 
 	}
 }
+

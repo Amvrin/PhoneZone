@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Admin Suite]">
   <test thread-count="5" name="View_Category Test(failed)">
     <classes>
-      <class name="PZ_end_to_end_test.Admin_PM_View_Category">
+      <class name="phonezone_TestCase.Admin_PM_View_product">
         <methods>
           <include name="opendriver"/>
-          <include name="verify_the_add_new_category"/>
           <include name="quitedriver"/>
+          <include name="verify_the_search_functionality_of_view_product1"/>
         </methods>
-      </class> <!-- PZ_end_to_end_test.Admin_PM_View_Category -->
+      </class> <!-- phonezone_TestCase.Admin_PM_View_product -->
     </classes>
   </test> <!-- View_Category Test(failed) -->
 </suite> <!-- Failed suite [Admin Suite] -->

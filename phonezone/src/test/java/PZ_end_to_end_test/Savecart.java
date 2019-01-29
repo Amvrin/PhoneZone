@@ -13,7 +13,6 @@ import org.testng.annotations.Test;
 
 import phonezoneproject_BaseClass.BaseClass;
 
-@Test(priority = 1)
 public class Savecart extends BaseClass {
 
 	/*

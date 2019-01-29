@@ -46,6 +46,12 @@ public class Admin_PM_View_Category extends BaseClass {
 
 	}
 
+	@Test(priority = 1)
+	public void login_to_Admin_page() throws InterruptedException {
+		Adminlogin_credential alc = new Adminlogin_credential();
+		alc.login_Admin_page();
+	}
+
 	
 	@Test(priority = 2)
 	public void go_to_side_nav_bar() throws Throwable {
@@ -127,55 +133,9 @@ public class Admin_PM_View_Category extends BaseClass {
 
 	}
 
+	
+
 	@Test(priority = 6)
-	public void verify_the_search_functionality() throws Throwable {
-
-		wait = new WebDriverWait(wd, 30);
-		// String entertext = "Accessories";
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
-
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(passtext);
-
-		wd.findElement(By.xpath(locatorprop.getProperty("searchbtn"))).click();
-		wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.xpath(locatorprop.getProperty("table_heading")))));
-
-		List<WebElement> table_heading = wd.findElements(By.xpath(locatorprop.getProperty("table_heading")));
-		for (int i = 0; i < table_heading.size(); i++) {
-
-			if (table_heading.get(i).getText().equals("PARENT CATEGORY")) {
-				System.out.println("PASS " + table_heading.get(i).getText());
-			} else if (table_heading.get(i).getText().equals("CATEGORY NAME")) {
-				System.out.println("PASS " + table_heading.get(i).getText());
-			} else if (table_heading.get(i).getText().equals("STATUS")) {
-				System.out.println("PASS " + table_heading.get(i).getText());
-			} else if (table_heading.get(i).getText().equals("ACTION")) {
-				System.out.println("PASS " + table_heading.get(i).getText());
-			} else {
-				System.out.println("FAIL " + table_heading.get(i).getText());
-			}
-
-			takescreenshot();
-		}
-
-		List<WebElement> count_categorylist = wd.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
-		int rowcount = count_categorylist.size();
-		if (rowcount > 0) {
-			for (int j = 0; j < rowcount; j++) {
-				System.out.println("PASS " + count_categorylist.get(j).getText());
-				Assert.assertEquals(count_categorylist.get(j).findElement(By.xpath("td[2]")).getText(), passtext);
-			}
-			takescreenshot();
-		} else if (rowcount == 0) {
-			System.out.println("PASS " + " Data not Available with repect to the searching keyword : " + passtext);
-			takescreenshot();
-		} else {
-			System.out.println("FAIL ");
-			takescreenshot();
-		}
-
-	}
-
-	@Test(priority = 7)
 	public void verify_the_pagination_of_searching_records() throws Throwable {
 		Actions act = new Actions(wd);
 		wait = new WebDriverWait(wd, 30);
@@ -290,7 +250,7 @@ public class Admin_PM_View_Category extends BaseClass {
 
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 7)
 	public void verify_the_filterby_and_pagination_dropdown() throws Throwable {
 
 		Actions act = new Actions(wd);
@@ -411,22 +371,73 @@ public class Admin_PM_View_Category extends BaseClass {
 
 		}
 	}
+	
+	@Test(priority = 8)
+	public void verify_the_search_functionality() throws Throwable {
+
+		wait = new WebDriverWait(wd, 30);
+		// String entertext = "Accessories";
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
+
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(passtext);
+
+		wd.findElement(By.xpath(locatorprop.getProperty("searchbtn"))).click();
+		wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.xpath(locatorprop.getProperty("table_heading")))));
+
+		List<WebElement> table_heading = wd.findElements(By.xpath(locatorprop.getProperty("table_heading")));
+		for (int i = 0; i < table_heading.size(); i++) {
+
+			if (table_heading.get(i).getText().equals("PARENT CATEGORY")) {
+				System.out.println("PASS " + table_heading.get(i).getText());
+			} else if (table_heading.get(i).getText().equals("CATEGORY NAME")) {
+				System.out.println("PASS " + table_heading.get(i).getText());
+			} else if (table_heading.get(i).getText().equals("STATUS")) {
+				System.out.println("PASS " + table_heading.get(i).getText());
+			} else if (table_heading.get(i).getText().equals("ACTION")) {
+				System.out.println("PASS " + table_heading.get(i).getText());
+			} else {
+				System.out.println("FAIL " + table_heading.get(i).getText());
+			}
+
+			takescreenshot();
+		}
+
+		List<WebElement> count_categorylist = wd.findElements(By.xpath(locatorprop.getProperty("count_categorylist")));
+		int rowcount = count_categorylist.size();
+		if (rowcount > 0) {
+			for (int j = 0; j < rowcount; j++) {
+				System.out.println("PASS " + count_categorylist.get(j).getText());
+				Assert.assertEquals(count_categorylist.get(j).findElement(By.xpath("td[2]")).getText(), passtext);
+			}
+			takescreenshot();
+		} else if (rowcount == 0) {
+			System.out.println("PASS " + " Data not Available with repect to the searching keyword : " + passtext);
+			takescreenshot();
+		} else {
+			System.out.println("FAIL ");
+			takescreenshot();
+		}
+
+	}
 
 	@Test(priority = 9)
 	public void verify_the_update_edit_btn_in_view_category() throws Throwable {
 
 		wait = new WebDriverWait(wd, 30);
+				
 		Thread.sleep(2000);
-
+		
 		String actinact = wd.findElement(By.xpath(locatorprop.getProperty("VC_status"))).getText();
-
+		
 		wd.findElement(By.xpath(locatorprop.getProperty("VC_editpensil"))).click();
-		Thread.sleep(2000);
+		
 		/*
 		 * wait.until(ExpectedConditions.textToBePresentInElement(
 		 * wd.findElement(By.xpath(locatorprop.getProperty("heading3"))),
 		 * "Update Category"));
 		 */
+		
+		Thread.sleep(2000);
 		String addNCtext = wd.findElement(By.xpath(locatorprop.getProperty("heading3"))).getText();
 		String VCbreadcrumb = wd.findElement(By.xpath(locatorprop.getProperty("ANP_ADbreadcrumb"))).getText();
 		Assert.assertEquals(VCbreadcrumb, addNCtext);
@@ -434,7 +445,7 @@ public class Admin_PM_View_Category extends BaseClass {
 		Thread.sleep(1000);
 
 		Select select1 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_grand_parent_id1"))));
-		select1.selectByIndex(3); // user input
+		select1.selectByIndex(1); // user input
 		Thread.sleep(1000);
 
 		Select select2 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_categories_id1"))));
@@ -445,7 +456,7 @@ public class Admin_PM_View_Category extends BaseClass {
 			System.out.println("no options is exist in the dropdown");
 		}
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys("ASUS phone");
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(passtext+"dk");
 
 		Select select3 = new Select(wd.findElement(By.xpath(locatorprop.getProperty("ANC_status1"))));
 		if (actinact.equalsIgnoreCase("Active")) {
@@ -487,7 +498,7 @@ public class Admin_PM_View_Category extends BaseClass {
 		wait.until(
 				ExpectedConditions.visibilityOf(wd.findElement(By.xpath(locatorprop.getProperty("second_heading3")))));
 		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).clear();
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(passtext);
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_textbox_catogory"))).sendKeys(passtext+"dk");
 
 		wd.findElement(By.xpath(locatorprop.getProperty("searchbtn"))).click();
 		takescreenshot();
@@ -657,18 +668,13 @@ public class Admin_PM_View_Category extends BaseClass {
 	public static String passtext() {
 
 		Random random = new Random();
-		int num = random.nextInt(10000);
+		int num = random.nextInt(1000000);
 		String passtext = "Lenovo headset" + num; // passs text in the textbox
 		return passtext;
 
 	}
 	static String passtext = passtext();
 	
-	@Test(priority = 1)
-	public void login_to_Admin_page() throws InterruptedException {
-		Adminlogin_credential alc = new Adminlogin_credential();
-		alc.login_Admin_page();
-	}
-
+	
 
 }

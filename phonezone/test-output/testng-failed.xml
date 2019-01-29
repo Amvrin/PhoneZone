@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Staff Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PZ_end_to_end_test.Savecart">
+      <class name="phonezone_TestCase.Admin_PM_View_product">
         <methods>
           <include name="opendriver"/>
-          <include name="cart"/>
           <include name="quitedriver"/>
+          <include name="verify_the_search_functionality_of_view_product1"/>
         </methods>
-      </class> <!-- PZ_end_to_end_test.Savecart -->
-      <class name="PZ_end_to_end_test.Viewcart">
-        <methods>
-          <include name="opendriver"/>
-          <include name="cartview"/>
-          <include name="quitedriver"/>
-        </methods>
-      </class> <!-- PZ_end_to_end_test.Viewcart -->
-      <class name="PZ_end_to_end_test.StaffDashboardTest">
-        <methods>
-          <include name="opendriver"/>
-          <include name="DownloadStockTake"/>
-          <include name="quitedriver"/>
-          <include name="SearchProductByName"/>
-        </methods>
-      </class> <!-- PZ_end_to_end_test.StaffDashboardTest -->
+      </class> <!-- phonezone_TestCase.Admin_PM_View_product -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Staff Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

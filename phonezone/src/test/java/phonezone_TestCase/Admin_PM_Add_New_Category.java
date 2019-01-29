@@ -43,11 +43,11 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 
 	}
 	
-	@Test(priority = 9)
+	/*@Test(priority = 9)
 	public void login_to_Admin_page() throws InterruptedException {
 		Adminlogin_credential alc = new Adminlogin_credential();
 		alc.login_Admin_page();
-	}
+	}*/
 
 	@Test(priority = 10)
 	public void go_to_side_nav_bar() throws Throwable {
@@ -112,8 +112,30 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 
 	}
 	
-	
 	@Test(priority = 13)
+	public void verify_the_submit_btn_set_empty_feilds() throws Throwable {
+
+		wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
+
+		Thread.sleep(2000);
+		Boolean alerttext = wait.until(ExpectedConditions.textToBePresentInElement(
+				wd.findElement(By.xpath(locatorprop.getProperty("ANC_alertmsg"))),
+				wd.findElement(By.xpath(locatorprop.getProperty("ANC_alertmsg"))).getText()));
+
+		if (alerttext == true) {
+			
+			System.out.println("PASS = " + wd.findElement(By.xpath(locatorprop.getProperty("ANC_alertmsg"))).getText());
+			takescreenshot();
+		} else {
+	
+			System.out.println("FAIL = " + wd.findElement(By.xpath(locatorprop.getProperty("ANC_alertmsg"))).getText());
+			takescreenshot();
+		}
+
+	}
+	
+	
+	@Test(priority = 14)
 	public void verify_the_add_new_category() throws Throwable {
 		Thread.sleep(2000);
 		wd.findElement(By.xpath(locatorprop.getProperty("add_new_category"))).click();
@@ -137,7 +159,7 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 		takescreenshot();
 	}
 
-	@Test(priority = 14)
+	@Test(priority = 15)
 	public void verify_the_existing_category() throws Throwable {
 		Thread.sleep(2000);
 		wd.findElement(By.xpath(locatorprop.getProperty("add_new_category"))).click();
@@ -160,24 +182,7 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 		takescreenshot();
 	}
 
-	@Test(priority = 15)
-	public void verify_the_submit_btn_set_empty_feilds() throws Throwable {
-
-		wd.findElement(By.xpath(locatorprop.getProperty("ANC_inputbtn"))).click();
-		takescreenshot();
-		Boolean alerttext = wait.until(ExpectedConditions.textToBePresentInElement(
-				wd.findElement(By.xpath(locatorprop.getProperty("ANC_alertmsg"))),
-				wd.findElement(By.xpath(locatorprop.getProperty("ANC_alertmsg"))).getText()));
-
-		if (alerttext == true) {
-			takescreenshot();
-			System.out.println("PASS = " + wd.findElement(By.xpath(locatorprop.getProperty("ANC_alertmsg"))).getText());
-		} else {
-			takescreenshot();
-			System.out.println("FAIL = " + wd.findElement(By.xpath(locatorprop.getProperty("ANC_alertmsg"))).getText());
-		}
-
-	}
+	
 
 	//@Test(priority = 16)
 	public void verify_the_submit_btn_set_all_feilds() throws Throwable {
@@ -244,7 +249,7 @@ public class Admin_PM_Add_New_Category extends BaseClass {
 	public static String passtext() {
 
 		Random random = new Random();
-		int num = random.nextInt(10000);
+		int num = random.nextInt(1000000);
 		String passtext = "ASUS headset" + num; // passs text in the textbox
 		return passtext;
 
