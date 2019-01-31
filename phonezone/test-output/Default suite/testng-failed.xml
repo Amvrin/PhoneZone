@@ -6,8 +6,8 @@
       <class name="phonezone_TestCase.Admin_PM_View_product">
         <methods>
           <include name="opendriver"/>
+          <include name="verify_the_delete_functionality"/>
           <include name="quitedriver"/>
-          <include name="verify_the_search_functionality_of_view_product1"/>
         </methods>
       </class> <!-- phonezone_TestCase.Admin_PM_View_product -->
     </classes>

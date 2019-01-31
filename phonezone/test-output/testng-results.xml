@@ -1,33 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="8" total="38" passed="30">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45154" started-at="2019-01-29T22:44:04Z" finished-at="2019-01-29T22:44:49Z">
+  <suite name="Admin Suite" duration-ms="2264517" started-at="2019-01-31T19:50:50Z" finished-at="2019-01-31T20:28:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45154" started-at="2019-01-29T22:44:04Z" finished-at="2019-01-29T22:44:49Z">
-      <class name="phonezone_TestCase.Admin_PM_View_product">
-        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezone_TestCase.Admin_PM_View_product@72e3f]" name="opendriver" is-config="true" duration-ms="14997" started-at="2019-01-29T22:43:49Z" finished-at="2019-01-29T22:44:04Z">
+    <test name="View_Category Test" duration-ms="2264517" started-at="2019-01-31T19:50:50Z" finished-at="2019-01-31T20:28:35Z">
+      <class name="phonezone_TestCase.Admin_PM_Add_New_Product">
+        <test-method status="PASS" signature="edit_Add_new_category()[pri:18, instance:phonezone_TestCase.Admin_PM_Add_New_Product@1846d2c]" name="edit_Add_new_category" duration-ms="3271" started-at="2019-01-31T19:53:09Z" finished-at="2019-01-31T19:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edit_Add_new_category -->
+        <test-method status="PASS" signature="verify_all_elements_is_exisit()[pri:19, instance:phonezone_TestCase.Admin_PM_Add_New_Product@1846d2c]" name="verify_all_elements_is_exisit" duration-ms="11169" started-at="2019-01-31T19:53:12Z" finished-at="2019-01-31T19:53:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_all_elements_is_exisit -->
+        <test-method status="PASS" signature="click_on_submit_button_by_set_empty_feilds()[pri:20, instance:phonezone_TestCase.Admin_PM_Add_New_Product@1846d2c]" name="click_on_submit_button_by_set_empty_feilds" duration-ms="8414" started-at="2019-01-31T19:53:23Z" finished-at="2019-01-31T19:53:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_on_submit_button_by_set_empty_feilds -->
+        <test-method status="PASS" signature="enter_the_invalid_data_in_textbox()[pri:21, instance:phonezone_TestCase.Admin_PM_Add_New_Product@1846d2c]" name="enter_the_invalid_data_in_textbox" duration-ms="6083" started-at="2019-01-31T19:53:32Z" finished-at="2019-01-31T19:53:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter_the_invalid_data_in_textbox -->
+        <test-method status="PASS" signature="verify_the_response_text_when_status_is_set()[pri:22, instance:phonezone_TestCase.Admin_PM_Add_New_Product@1846d2c]" name="verify_the_response_text_when_status_is_set" duration-ms="54468" started-at="2019-01-31T19:53:38Z" finished-at="2019-01-31T19:54:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_response_text_when_status_is_set -->
+      </class> <!-- phonezone_TestCase.Admin_PM_Add_New_Product -->
+      <class name="phonezone_TestCase.Admin_Special_Order">
+        <test-method status="PASS" signature="opendriver()[pri:0, instance:phonezone_TestCase.Admin_Special_Order@5997b1]" name="opendriver" is-config="true" duration-ms="15284" started-at="2019-01-31T19:50:35Z" finished-at="2019-01-31T19:50:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opendriver -->
-        <test-method status="PASS" signature="go_to_side_nav_bar()[pri:30, instance:phonezone_TestCase.Admin_PM_View_product@72e3f]" name="go_to_side_nav_bar" duration-ms="736" started-at="2019-01-29T22:44:04Z" finished-at="2019-01-29T22:44:05Z">
+        <test-method status="PASS" signature="Verify_side_navigation_bar_special_order()[pri:1, instance:phonezone_TestCase.Admin_Special_Order@5997b1]" name="Verify_side_navigation_bar_special_order" duration-ms="765" started-at="2019-01-31T19:50:50Z" finished-at="2019-01-31T19:50:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- go_to_side_nav_bar -->
-        <test-method status="PASS" signature="edit_view_product()[pri:31, instance:phonezone_TestCase.Admin_PM_View_product@72e3f]" name="edit_view_product" duration-ms="3139" started-at="2019-01-29T22:44:05Z" finished-at="2019-01-29T22:44:08Z">
+        </test-method> <!-- Verify_side_navigation_bar_special_order -->
+        <test-method status="PASS" signature="click_on_the_send_special_order()[pri:2, instance:phonezone_TestCase.Admin_Special_Order@5997b1]" name="click_on_the_send_special_order" duration-ms="2478" started-at="2019-01-31T19:50:51Z" finished-at="2019-01-31T19:50:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- edit_view_product -->
-        <test-method status="PASS" signature="verify_the_search_functionality_of_view_product1()[pri:33, instance:phonezone_TestCase.Admin_PM_View_product@72e3f]" name="verify_the_search_functionality_of_view_product1" duration-ms="41231" started-at="2019-01-29T22:44:08Z" finished-at="2019-01-29T22:44:49Z">
+        </test-method> <!-- click_on_the_send_special_order -->
+        <test-method status="PASS" signature="verify_the_elements_is_exsist()[pri:3, instance:phonezone_TestCase.Admin_Special_Order@5997b1]" name="verify_the_elements_is_exsist" duration-ms="2455" started-at="2019-01-31T19:50:54Z" finished-at="2019-01-31T19:50:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_the_search_functionality_of_view_product1 -->
-        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezone_TestCase.Admin_PM_View_product@72e3f]" name="quitedriver" is-config="true" duration-ms="652" started-at="2019-01-29T22:44:49Z" finished-at="2019-01-29T22:44:50Z">
+        </test-method> <!-- verify_the_elements_is_exsist -->
+        <test-method status="PASS" signature="click_on_the_send_btn()[pri:4, instance:phonezone_TestCase.Admin_Special_Order@5997b1]" name="click_on_the_send_btn" duration-ms="653" started-at="2019-01-31T19:50:56Z" finished-at="2019-01-31T19:50:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_on_the_send_btn -->
+        <test-method status="PASS" signature="validate_the_send_button_set_feilds_empty()[pri:5, instance:phonezone_TestCase.Admin_Special_Order@5997b1]" name="validate_the_send_button_set_feilds_empty" duration-ms="1531" started-at="2019-01-31T19:50:57Z" finished-at="2019-01-31T19:50:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_the_send_button_set_feilds_empty -->
+        <test-method status="PASS" signature="validate_the_send_button_not_select_dropdown()[pri:6, instance:phonezone_TestCase.Admin_Special_Order@5997b1]" name="validate_the_send_button_not_select_dropdown" duration-ms="903" started-at="2019-01-31T19:50:58Z" finished-at="2019-01-31T19:50:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_the_send_button_not_select_dropdown -->
+        <test-method status="PASS" signature="select_data_from_dropdown_of_select_store()[pri:7, instance:phonezone_TestCase.Admin_Special_Order@5997b1]" name="select_data_from_dropdown_of_select_store" duration-ms="87703" started-at="2019-01-31T19:50:59Z" finished-at="2019-01-31T19:52:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_data_from_dropdown_of_select_store -->
+        <test-method status="PASS" signature="validate_the_send_btn()[pri:8, instance:phonezone_TestCase.Admin_Special_Order@5997b1]" name="validate_the_send_btn" duration-ms="6719" started-at="2019-01-31T19:52:27Z" finished-at="2019-01-31T19:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_the_send_btn -->
+        <test-method status="PASS" signature="quitedriver()[pri:0, instance:phonezone_TestCase.Admin_Special_Order@5997b1]" name="quitedriver" is-config="true" duration-ms="851" started-at="2019-01-31T20:28:35Z" finished-at="2019-01-31T20:28:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitedriver -->
+      </class> <!-- phonezone_TestCase.Admin_Special_Order -->
+      <class name="phonezone_TestCase.Admin_PM_View_Category">
+        <test-method status="PASS" signature="edit_view_category()[pri:24, instance:phonezone_TestCase.Admin_PM_View_Category@8ad73b]" name="edit_view_category" duration-ms="3166" started-at="2019-01-31T19:54:32Z" finished-at="2019-01-31T19:54:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edit_view_category -->
+        <test-method status="PASS" signature="verify_the_pagination_of_searching_records()[pri:25, instance:phonezone_TestCase.Admin_PM_View_Category@8ad73b]" name="verify_the_pagination_of_searching_records" duration-ms="32268" started-at="2019-01-31T19:54:35Z" finished-at="2019-01-31T19:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_pagination_of_searching_records -->
+        <test-method status="PASS" signature="verify_the_filterby_and_pagination_dropdown()[pri:26, instance:phonezone_TestCase.Admin_PM_View_Category@8ad73b]" name="verify_the_filterby_and_pagination_dropdown" duration-ms="96639" started-at="2019-01-31T19:55:08Z" finished-at="2019-01-31T19:56:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_filterby_and_pagination_dropdown -->
+        <test-method status="PASS" signature="verify_the_search_functionality()[pri:27, instance:phonezone_TestCase.Admin_PM_View_Category@8ad73b]" name="verify_the_search_functionality" duration-ms="3681" started-at="2019-01-31T19:56:44Z" finished-at="2019-01-31T19:56:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_search_functionality -->
+        <test-method status="PASS" signature="verify_the_update_edit_btn_in_view_category()[pri:28, instance:phonezone_TestCase.Admin_PM_View_Category@8ad73b]" name="verify_the_update_edit_btn_in_view_category" duration-ms="10076" started-at="2019-01-31T19:56:48Z" finished-at="2019-01-31T19:56:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_update_edit_btn_in_view_category -->
+        <test-method status="PASS" signature="verify_the_delete_functionality()[pri:29, instance:phonezone_TestCase.Admin_PM_View_Category@8ad73b]" name="verify_the_delete_functionality" duration-ms="43260" started-at="2019-01-31T19:56:58Z" finished-at="2019-01-31T19:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_delete_functionality -->
+      </class> <!-- phonezone_TestCase.Admin_PM_View_Category -->
+      <class name="phonezone_TestCase.Admin_PM_Add_New_Category">
+        <test-method status="PASS" signature="go_to_side_nav_bar()[pri:10, instance:phonezone_TestCase.Admin_PM_Add_New_Category@f4d528]" name="go_to_side_nav_bar" duration-ms="854" started-at="2019-01-31T19:52:34Z" finished-at="2019-01-31T19:52:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- go_to_side_nav_bar -->
+        <test-method status="PASS" signature="verify_Add_new_category_landing_page()[pri:11, instance:phonezone_TestCase.Admin_PM_Add_New_Category@f4d528]" name="verify_Add_new_category_landing_page" duration-ms="1736" started-at="2019-01-31T19:52:35Z" finished-at="2019-01-31T19:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Add_new_category_landing_page -->
+        <test-method status="PASS" signature="verify_all_elements_exsist_in_Add_New_category()[pri:12, instance:phonezone_TestCase.Admin_PM_Add_New_Category@f4d528]" name="verify_all_elements_exsist_in_Add_New_category" duration-ms="3864" started-at="2019-01-31T19:52:36Z" finished-at="2019-01-31T19:52:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_all_elements_exsist_in_Add_New_category -->
+        <test-method status="PASS" signature="verify_the_submit_btn_set_empty_feilds()[pri:13, instance:phonezone_TestCase.Admin_PM_Add_New_Category@f4d528]" name="verify_the_submit_btn_set_empty_feilds" duration-ms="2608" started-at="2019-01-31T19:52:40Z" finished-at="2019-01-31T19:52:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_submit_btn_set_empty_feilds -->
+        <test-method status="PASS" signature="verify_the_add_new_category()[pri:14, instance:phonezone_TestCase.Admin_PM_Add_New_Category@f4d528]" name="verify_the_add_new_category" duration-ms="13230" started-at="2019-01-31T19:52:43Z" finished-at="2019-01-31T19:52:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_add_new_category -->
+        <test-method status="PASS" signature="verify_the_existing_category()[pri:15, instance:phonezone_TestCase.Admin_PM_Add_New_Category@f4d528]" name="verify_the_existing_category" duration-ms="12760" started-at="2019-01-31T19:52:56Z" finished-at="2019-01-31T19:53:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_existing_category -->
+      </class> <!-- phonezone_TestCase.Admin_PM_Add_New_Category -->
+      <class name="phonezone_TestCase.Admin_PM_View_product">
+        <test-method status="PASS" signature="edit_view_product()[pri:31, instance:phonezone_TestCase.Admin_PM_View_product@762604]" name="edit_view_product" duration-ms="3431" started-at="2019-01-31T19:57:41Z" finished-at="2019-01-31T19:57:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edit_view_product -->
+        <test-method status="PASS" signature="verify_the_filterBy_and_pagination_of_view_product()[pri:32, instance:phonezone_TestCase.Admin_PM_View_product@762604]" name="verify_the_filterBy_and_pagination_of_view_product" duration-ms="1732299" started-at="2019-01-31T19:57:45Z" finished-at="2019-01-31T20:26:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_filterBy_and_pagination_of_view_product -->
+        <test-method status="PASS" signature="verify_the_search_functionality_of_view_product1()[pri:33, instance:phonezone_TestCase.Admin_PM_View_product@762604]" name="verify_the_search_functionality_of_view_product1" duration-ms="9204" started-at="2019-01-31T20:26:37Z" finished-at="2019-01-31T20:26:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_search_functionality_of_view_product1 -->
+        <test-method status="PASS" signature="verify_the_Edit_update_btn()[pri:34, instance:phonezone_TestCase.Admin_PM_View_product@762604]" name="verify_the_Edit_update_btn" duration-ms="17096" started-at="2019-01-31T20:26:46Z" finished-at="2019-01-31T20:27:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_Edit_update_btn -->
+        <test-method status="PASS" signature="verify_the_delete_functionality()[pri:35, instance:phonezone_TestCase.Admin_PM_View_product@762604]" name="verify_the_delete_functionality" duration-ms="91644" started-at="2019-01-31T20:27:03Z" finished-at="2019-01-31T20:28:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_delete_functionality -->
       </class> <!-- phonezone_TestCase.Admin_PM_View_product -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- View_Category Test -->
+  </suite> <!-- Admin Suite -->
 </testng-results>

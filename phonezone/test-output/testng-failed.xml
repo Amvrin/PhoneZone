@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Admin Suite]">
+  <test thread-count="5" name="View_Category Test(failed)">
     <classes>
       <class name="phonezone_TestCase.Admin_PM_View_product">
         <methods>
           <include name="opendriver"/>
+          <include name="verify_the_Edit_update_btn"/>
+          <include name="edit_view_product"/>
+          <include name="verify_the_delete_functionality"/>
           <include name="quitedriver"/>
           <include name="verify_the_search_functionality_of_view_product1"/>
         </methods>
       </class> <!-- phonezone_TestCase.Admin_PM_View_product -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- View_Category Test(failed) -->
+</suite> <!-- Failed suite [Admin Suite] -->

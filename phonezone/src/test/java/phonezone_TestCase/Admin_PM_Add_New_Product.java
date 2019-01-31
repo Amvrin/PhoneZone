@@ -184,24 +184,24 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 			List<WebElement> ANP_sub_categories_id = wd
 					.findElements(By.xpath(locatorprop.getProperty("ANP_sub_categories_id")));
 
-			for (int k = 1; k < ANP_sub_categories_id.size(); k++) {
+			//for (int k = 1; k < ANP_sub_categories_id.size(); k++) {
 				Thread.sleep(1000);
 				try {
 					Select select2 = new Select(
 							wd.findElement(By.xpath(locatorprop.getProperty("ANP_sub_categories_id1"))));
-					select2.selectByIndex(k);
+					select2.selectByIndex(1);
 				} catch (Exception e) {
 					System.out.println(" ANP_sub_categories_id1 = Drop_down is empty");
 				}
 
 				List<WebElement> ANP_sub_sub_categories_id = wd
 						.findElements(By.xpath(locatorprop.getProperty("ANP_sub_sub_categories_id")));
-				for (int d = 1; d < ANP_sub_sub_categories_id.size(); d++) {
+			//	for (int d = 1; d < ANP_sub_sub_categories_id.size(); d++) {
 					Thread.sleep(1000);
 					try {
 						Select select4 = new Select(
 								wd.findElement(By.xpath(locatorprop.getProperty("ANP_sub_sub_categories_id1"))));
-						select4.selectByIndex(d);
+						select4.selectByIndex(1);
 					} catch (Exception e) {
 						System.out.println(" ANP_sub_sub_categories_id1 =Drop_down is empty");
 					}
@@ -253,15 +253,15 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 					try {
 						Select select2 = new Select(
 								wd.findElement(By.xpath(locatorprop.getProperty("ANP_sub_categories_id1"))));
-						select2.selectByIndex(k - 1);
+						select2.selectByIndex(1);
 					} catch (Exception e) {
 						System.out.println(" ANP_sub_categories_id1 = Drop_down is empty");
 					}
 
 					// }
-				}
+				//}
 
-			}
+			//}
 
 		}
 
@@ -282,24 +282,24 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 			List<WebElement> ANP_sub_categories_id = wd
 					.findElements(By.xpath(locatorprop.getProperty("ANP_sub_categories_id")));
 
-			for (int k = 1; k < ANP_sub_categories_id.size(); k++) {
+			//for (int k = 1; k < ANP_sub_categories_id.size(); k++) {
 				Thread.sleep(1000);
 				try {
 					Select select2 = new Select(
 							wd.findElement(By.xpath(locatorprop.getProperty("ANP_sub_categories_id1"))));
-					select2.selectByIndex(k);
+					select2.selectByIndex(1);
 				} catch (Exception e) {
 					System.out.println(" ANP_sub_categories_id1 = Drop_down is empty");
 				}
 
 				List<WebElement> ANP_sub_sub_categories_id = wd
 						.findElements(By.xpath(locatorprop.getProperty("ANP_sub_sub_categories_id")));
-				for (int d = 1; d < ANP_sub_sub_categories_id.size(); d++) {
+				//for (int d = 1; d < ANP_sub_sub_categories_id.size(); d++) {
 					Thread.sleep(1000);
 					try {
 						Select select4 = new Select(
 								wd.findElement(By.xpath(locatorprop.getProperty("ANP_sub_sub_categories_id1"))));
-						select4.selectByIndex(d);
+						select4.selectByIndex(1);
 					} catch (Exception e) {
 						System.out.println(" ANP_sub_sub_categories_id1 =Drop_down is empty");
 					}
@@ -353,9 +353,9 @@ public class Admin_PM_Add_New_Product extends BaseClass {
 
 					
 					// }
-				}
+				//}
 
-			}
+			//}
 		}
 
 	}
